@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="base.css">
+<style>
+body{width:640px;height:560px;padding:10px;display:flex;flex-direction:column;gap:9px}
+h2{font-size:18px;color:var(--navy)}
+.t{display:grid;grid-template-columns:62px 1fr;gap:10px;border:2px solid var(--line);border-radius:10px;padding:10px 12px;align-items:center}
+.t .n{font-size:13px;font-weight:700;color:#fff;background:var(--blue);border-radius:8px;text-align:center;padding:8px 0;line-height:1.15}
+.t b{font-size:15px;color:var(--navy);display:block}
+.t p{font-size:13px;line-height:1.3}
+.t.t3 .n{background:var(--navy)}
+.rule{border:2px dashed var(--bad);border-radius:10px;padding:8px 12px;font-size:13.5px;color:var(--bad);font-weight:700;background:var(--bad-s)}
+.st{display:flex;flex-wrap:wrap;gap:7px}
+.lbl{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.fall{font-size:12.5px;color:var(--muted)}
+</style>
+<h2>CONFIRM: ask the authority that issued it</h2>
+<div class="t"><div class="n">TIER 1<br>instant</div><div><b>Cryptographic proof</b><p>Digital signature traced to the issuer's certificate (India's CCA root in production) · DigiLocker-issued file · QR code only if it opens an allow-listed government domain</p></div></div>
+<div class="t"><div class="n">TIER 2<br>seconds</div><div><b>Issuer's own portal</b><p>Look up the NOC / FDR / licence number on the issuer's official site and compare name, date, premises</p></div></div>
+<div class="t t3"><div class="n">TIER 3<br>hours–days</div><div><b>Registered-contact confirmation</b><p>One-click "Yes, we issued this / No" request to the issuer's official contact stored in the registry. Unanswered past the SLA, the case goes to manual review</p></div></div>
+<div class="rule">Never trust a QR code, phone number or email printed on the uploaded document itself (this is how the 2026 Delhi University fakes worked)</div>
+<div class="lbl">Every document ends in one of six statuses (wording from the PS)</div>
+<div class="st"><span class="chip ok">Verified</span><span class="chip bad">Mismatch detected</span><span class="chip warn">Expired</span><span class="chip pend">Verification pending</span><span class="chip grey">Source unavailable</span><span class="chip warn">Manual review required</span></div>

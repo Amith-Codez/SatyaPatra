@@ -1,0 +1,626 @@
+<title>SatyaPatra SIH 2026 Playbook</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a verification dossier. Sticky index on the left, one reading column, status chips styled as rubber stamps. */
+:root{
+  --paper:#f5f6fa; --sheet:#ffffff; --ink:#141a2e; --muted:#59617d; --rule:#dde1ec;
+  --seal:#3341a8; --seal-soft:#e8eaf8;
+  --ok:#13704d; --ok-soft:#e2f3eb; --warn:#9a5b00; --warn-soft:#fbf0dc; --bad:#b3261e; --bad-soft:#fbe7e5; --pend:#5a4fb0; --pend-soft:#eeeafb;
+  --f-display:"Zilla Slab", Georgia, "Times New Roman", serif;
+  --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0e1120; --sheet:#151a2c; --ink:#e7e9f3; --muted:#a0a7c2; --rule:#272d45;
+  --seal:#98a3ff; --seal-soft:#1d2348;
+  --ok:#5fcf9a; --ok-soft:#12291f; --warn:#f1b552; --warn-soft:#2c2210; --bad:#ff8a80; --bad-soft:#331816; --pend:#b9b0ff; --pend-soft:#221d3d;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0e1120; --sheet:#151a2c; --ink:#e7e9f3; --muted:#a0a7c2; --rule:#272d45;
+  --seal:#98a3ff; --seal-soft:#1d2348;
+  --ok:#5fcf9a; --ok-soft:#12291f; --warn:#f1b552; --warn-soft:#2c2210; --bad:#ff8a80; --bad-soft:#331816; --pend:#b9b0ff; --pend-soft:#221d3d;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
+a{color:var(--seal);text-underline-offset:2px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--seal);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.1rem);font-weight:700}
+h3{font-size:1.2rem;font-weight:600}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+/* hero */
+.hero{padding-block:48px 36px;border-bottom:1px solid var(--rule)}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5.4vw,3.6rem);font-weight:700;letter-spacing:-.01em;margin-block:10px 14px}
+.hero h1 span{color:var(--seal)}
+.lede{font-size:1.15rem;max-width:62ch;color:var(--ink)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;font-family:var(--f-mono);font-size:.85rem}
+.facts div{display:flex;gap:6px}
+.facts b{font-weight:500;color:var(--muted)}
+.stamp{font-family:var(--f-mono);font-weight:500;text-transform:uppercase;letter-spacing:.14em;color:var(--ok);border:3px double var(--ok);border-radius:10px;padding:18px 22px;transform:rotate(-7deg);text-align:center;font-size:.9rem;line-height:1.5;opacity:.9}
+.stamp strong{display:block;font-family:var(--f-display);font-size:1.6rem;letter-spacing:.06em}
+/* layout */
+.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:48px;padding-block:36px 80px}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);align-self:start;font-size:.88rem}
+nav.toc ol{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:4px;counter-reset:t}
+nav.toc a{color:var(--muted);text-decoration:none;display:block;padding:3px 0}
+nav.toc a:hover{color:var(--seal)}
+main{min-width:0;display:grid;gap:64px}
+section{display:grid;gap:18px;scroll-margin-top:20px}
+section > p,section .prose{max-width:70ch}
+.prose{display:grid;gap:12px}
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:10px;background:var(--sheet)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--paper)}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--f-mono);text-align:right;white-space:nowrap}
+tr.pick td{background:var(--seal-soft)}
+.chip{display:inline-block;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:4px;border:1px solid currentColor;white-space:nowrap}
+.c-ok{color:var(--ok);background:var(--ok-soft)} .c-bad{color:var(--bad);background:var(--bad-soft)} .c-warn{color:var(--warn);background:var(--warn-soft)} .c-pend{color:var(--pend);background:var(--pend-soft)} .c-seal{color:var(--seal);background:var(--seal-soft)}
+.callout{border-left:3px solid var(--seal);padding:4px 0 4px 16px;max-width:70ch}
+/* news */
+.case{display:grid;gap:10px}
+.case .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
+.case h3{font-size:1.1rem}
+.case .catch{border-top:1px dashed var(--rule);padding-top:10px;font-size:.92rem}
+.case .catch b{color:var(--ok)}
+.case .src{font-size:.8rem}
+/* engines */
+.engine{display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+.engine .k{font-family:var(--f-mono);font-size:.8rem;color:var(--seal);border:1px solid var(--seal);border-radius:6px;padding:2px 8px;height:fit-content}
+.engine ul{margin:4px 0 0;padding-left:18px;font-size:.92rem}
+/* replay */
+.replay{display:grid;gap:0;border:1px solid var(--rule);border-radius:10px;background:var(--sheet);overflow:hidden}
+.step{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:12px 16px;border-bottom:1px solid var(--rule)}
+.step:last-child{border-bottom:0}
+.step .t{font-family:var(--f-mono);font-size:.82rem;color:var(--muted)}
+.replay.real .step .t{color:var(--bad)}
+/* qa */
+details.qa{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:0}
+details.qa summary{cursor:pointer;padding:12px 16px;font-weight:500;list-style:none;display:flex;gap:10px}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"+";font-family:var(--f-mono);color:var(--seal);width:1ch}
+details.qa[open] summary::before{content:"−"}
+details.qa .a{padding:0 16px 14px 36px;font-size:.93rem;display:grid;gap:8px;max-width:78ch}
+.qgroup{display:grid;gap:8px}
+.qgroup h3{font-size:1rem;font-family:var(--f-mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+ul.tight{margin:0;padding-left:20px;display:grid;gap:6px}
+ol.tight{margin:0;padding-left:22px;display:grid;gap:6px}
+.slide{display:grid;grid-template-columns:56px 1fr;gap:14px}
+.slide .n{font-family:var(--f-display);font-size:2rem;color:var(--seal);line-height:1}
+pre.mermaid{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:16px;overflow-x:auto;margin:0}
+.script{font-family:var(--f-display);font-size:1.15rem;line-height:1.55;border-left:3px solid var(--bad);padding-left:18px;max-width:66ch}
+footer{border-top:1px solid var(--rule);padding-block:24px;font-size:.85rem;color:var(--muted)}
+.jump{display:none}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr;gap:24px}
+  nav.toc{display:none}
+  .jump{display:block}
+  .grid3{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  .hero-grid{grid-template-columns:1fr}
+  .stamp{justify-self:start;transform:rotate(-4deg)}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .step{grid-template-columns:1fr;gap:2px}
+  .engine{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">SIH 2026 · Problem Statement SIH26261 · AICTE · Software · Smart Automation</div>
+      <h1>Satya<span>Patra</span></h1>
+      <p class="lede">An AI trust layer for AICTE approvals. It reads every document an institution uploads, checks it against the Approval Process Handbook, confirms it with the authority that issued it, and backs every red flag with evidence an officer can see. The officer still decides.</p>
+      <div class="facts">
+        <div><b>Idea deadline</b> 28 Oct 2026</div>
+        <div><b>Ideas so far</b> 17 / 500</div>
+        <div><b>Licence cost</b> ₹0</div>
+        <div><b>Checked on portal</b> 22 Oct 2026</div>
+      </div>
+    </div>
+    <div class="stamp" aria-hidden="true">Verified<strong>AT SOURCE</strong>evidence attached</div>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sections">
+    <div class="eyebrow">Dossier</div>
+    <ol>
+      <li><a href="#verdict">Verdict</a></li>
+      <li><a href="#field">The 5 open PSs</a></li>
+      <li><a href="#cases">Real cases</a></li>
+      <li><a href="#replay">If it had existed</a></li>
+      <li><a href="#solution">The solution</a></li>
+      <li><a href="#edge">Why we beat others</a></li>
+      <li><a href="#stack">Free tech stack</a></li>
+      <li><a href="#data">Data plan</a></li>
+      <li><a href="#validate">Validation</a></li>
+      <li><a href="#winners">Winner lessons</a></li>
+      <li><a href="#ppt">6-slide PPT</a></li>
+      <li><a href="#demo">Pitch & demo</a></li>
+      <li><a href="#judge">Judge grilling</a></li>
+      <li><a href="#risks">Weak spots</a></li>
+      <li><a href="#plan">6-day plan</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <details class="jump card"><summary class="eyebrow" style="cursor:pointer">Jump to a section</summary>
+      <p style="margin-top:10px;font-size:.9rem;line-height:2"><a href="#verdict">Verdict</a> · <a href="#field">Open PSs</a> · <a href="#cases">Real cases</a> · <a href="#replay">Replay</a> · <a href="#solution">Solution</a> · <a href="#edge">Edge</a> · <a href="#stack">Stack</a> · <a href="#data">Data</a> · <a href="#validate">Validation</a> · <a href="#winners">Winners</a> · <a href="#ppt">PPT</a> · <a href="#demo">Pitch</a> · <a href="#judge">Judge Q&amp;A</a> · <a href="#risks">Risks</a> · <a href="#plan">Plan</a> · <a href="#sources">Sources</a></p>
+    </details>
+
+    <!-- VERDICT -->
+    <section id="verdict">
+      <div class="eyebrow">01 · The verdict</div>
+      <h2>Pick SIH26261: AI-Powered Application Validation, Document Authentication and Regulatory Compliance Verification</h2>
+      <div class="prose">
+        <p>The SIH 2026 portal lists 265 problem statements. As of 22 October 2026, 260 of them are closed. 182 software PSs closed on 5 October, and the late batch your friend heard about (25 PSs) closed on 20 October, except five. <strong>Only five PSs still accept ideas until 28 October 2026, and all five are AICTE software PSs.</strong> So the real choice is between those five.</p>
+        <p>SIH26261 wins on every criterion you gave:</p>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>Free to build</h3><p class="muted" style="margin-top:6px">Every component is open source: OCR, forensics, local LLM, satellite building data, PDF signature checks. It runs on a laptop for the demo and on government cloud in production.</p></div>
+        <div class="card"><h3>Data exists</h3><p class="muted" style="margin-top:6px">The PS explicitly allows synthetic or anonymised data. Public EoA letters, the APH 2024-27 handbook, the DocTamper forgery dataset and Google Open Buildings are all free.</p></div>
+        <div class="card"><h3>Room for real innovation</h3><p class="muted" style="margin-top:6px">Most teams will build "OCR + ChatGPT + dashboard". We add verification at the issuing authority, satellite checks on claimed buildings, and memory across institutions.</p></div>
+        <div class="card"><h3>Easy to explain</h3><p class="muted" style="margin-top:6px">"Upload a fake fire NOC. Eight seconds later it's flagged red, the issuer says it never issued it, and here's the evidence." Judges get it in one look.</p></div>
+      </div>
+      <p class="callout">Precedent: in SIH 2024, team <em>Kal Hona Code</em> (K L University) won the Software Edition with an "AI Supported AICTE Approval Process Portal" (SIH1729). AICTE has rewarded this kind of work before. We go one level deeper: they automated the <em>workflow</em>, we verify the <em>truth</em> of what flows through it.</p>
+    </section>
+
+    <!-- FIELD -->
+    <section id="field">
+      <div class="eyebrow">02 · Scoring all five open PSs</div>
+      <h2>How the five open problem statements compare</h2>
+      <p class="muted">Each scored out of 10 by me against your criteria. The "Ideas" column is the live count on sih.gov.in on 22 Oct 2026 (cap 500 per PS).</p>
+      <div class="tbl"><table>
+        <thead><tr><th>PS</th><th>Title</th><th>Innovation</th><th>Demo impact</th><th>News evidence</th><th>Free build</th><th>Data</th><th>Explainable</th><th>Ideas</th><th>Total /60</th></tr></thead>
+        <tbody>
+          <tr class="pick"><td class="mono">SIH26261</td><td><strong>AI application validation, document authentication & compliance</strong></td><td class="num">10</td><td class="num">10</td><td class="num">10</td><td class="num">9</td><td class="num">7</td><td class="num">9</td><td class="num">17</td><td class="num"><strong>55</strong></td></tr>
+          <tr><td class="mono">SIH26265</td><td>Security deposit / FDR portal</td><td class="num">6</td><td class="num">6</td><td class="num">9</td><td class="num">10</td><td class="num">6</td><td class="num">9</td><td class="num">13</td><td class="num">46</td></tr>
+          <tr><td class="mono">SIH26263</td><td>APAAR ID student data & verification</td><td class="num">7</td><td class="num">6</td><td class="num">8</td><td class="num">9</td><td class="num">5</td><td class="num">8</td><td class="num">16</td><td class="num">43</td></tr>
+          <tr><td class="mono">SIH26264</td><td>Complaint case dashboard across bureaus</td><td class="num">6</td><td class="num">5</td><td class="num">5</td><td class="num">10</td><td class="num">6</td><td class="num">9</td><td class="num">25</td><td class="num">41</td></tr>
+          <tr><td class="mono">SIH26262</td><td>Approval workflow automation & compliance alerts</td><td class="num">5</td><td class="num">5</td><td class="num">5</td><td class="num">10</td><td class="num">6</td><td class="num">7</td><td class="num">12</td><td class="num">38</td></tr>
+        </tbody>
+      </table></div>
+      <div class="grid2">
+        <div class="card"><h3 style="font-size:1rem">Why not the others</h3><ul class="tight" style="margin-top:8px;font-size:.92rem">
+          <li><b>FDR (26265):</b> strong news (fake FDR frauds of ₹100+ crore in 2026), but it is mostly CRUD + reminders. Bank verification needs bank APIs you can't get for free. We absorb it as one document type inside SatyaPatra instead.</li>
+          <li><b>APAAR (26263):</b> the APAAR API isn't public, and the Supreme Court took up APAAR consent and privacy in July 2026. Judges will push hard on privacy.</li>
+          <li><b>Complaints (26264):</b> the most crowded PS (25 ideas) and the least visual.</li>
+          <li><b>Workflow (26262):</b> close to what the 2024 winner already built, so judges have seen it.</li>
+        </ul></div>
+        <div class="card"><h3 style="font-size:1rem">If your college sends 5 teams</h3><p style="margin-top:8px;font-size:.92rem">With exactly five open PSs, the college may give one team to each. If another team takes 26261, the next best is <b>26265 (FDR)</b>: pitch it as "verify every FDR with the bank before it's accepted", built on the ₹645 crore fake-FDR case reported in July 2026. The SatyaPatra verification design in this dossier carries over to it directly.</p></div>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases">
+      <div class="eyebrow">03 · Real cases from the news</div>
+      <h2>This is already happening, and people have died over paperwork</h2>
+      <p class="muted">Every case below is from a published report. Each card ends with the SatyaPatra check that would have raised a flag. Use 2 or 3 of these in the pitch, not all of them.</p>
+      <div class="grid2">
+        <article class="card case">
+          <div class="meta"><span class="chip c-bad">Forged</span>Aug 2026 · Hyderabad</div>
+          <h3>8 junior colleges booked for forged fire NOCs carrying the HYDRAA chief's signature</h3>
+          <p>Education officers sent 76 fire NOCs back to HYDRAA to check by hand. Eight were fake, with a forged signature of Commissioner A.V. Ranganath. They had been used to get affiliation from the Telangana intermediate board. NOCs from about 60 more institutions are still being checked.</p>
+          <p class="catch"><b>SatyaPatra:</b> the issuer registry looks up the NOC number at the fire authority (Tier 2) and gets no match. Forensics adds supporting signs, such as a seal scan that is pixel-identical to one on another institution's scanned NOC (two real scans never match exactly). The flag appears at upload, not months later.</p>
+          <p class="src"><a href="https://telanganatoday.com/eight-hyderabad-colleges-booked-for-allegedly-submitting-forged-fire-nocs" target="_blank" rel="noopener">Telangana Today</a> · <a href="https://www.siasat.com/eight-colleges-booked-for-forging-hydraa-chiefs-signature-3519057/" target="_blank" rel="noopener">Siasat</a> · <a href="https://news.careers360.com/hyderabad-eight-private-colleges-booked-for-submitting-fake-fire-nocs-telangana-board-intermediate-education-college-managements" target="_blank" rel="noopener">Careers360</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-bad">AI-generated</span>Jul 2026 · Delhi University</div>
+          <h3>Fake QR codes and AI-generated certificates in DU admissions</h3>
+          <p>Scanning the QR codes revealed "completely false or AI-generated documents"; some showed another person's name. The admissions dean said "the digital footprints are simply not matching" and that DU will build an AI tool for next year. More than 90,000 students' certificates need checking.</p>
+          <p class="catch"><b>SatyaPatra:</b> a QR code is trusted only if it resolves to an allow-listed official domain from the issuer registry. The name and number the QR returns are matched against the document. AI-generation and editing signals add a second layer.</p>
+          <p class="src"><a href="https://theprint.in/india/du-plans-to-develop-ai-based-verification-tool-after-detecting-manipulated-documents-in-admissions/2991453/" target="_blank" rel="noopener">ThePrint / PTI, 20 Jul 2026</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-warn">Use mismatch</span>Jul 2024 · Old Rajinder Nagar, Delhi</div>
+          <h3>3 UPSC aspirants drowned in a basement the NOC called a "store room"</h3>
+          <p>The building plan and fire NOC described the basement as parking and storage. It was being run as a library. When it flooded, three students died. The fire chief confirmed the NOC showed a store room.</p>
+          <p class="catch"><b>SatyaPatra:</b> extracts permitted use per floor from the NOC and completion certificate, then compares it with the institution's own floor plan, lab and library declarations, and photos. "Library on basement level; NOC permits storage only" becomes a red flag with both documents side by side.</p>
+          <p class="src"><a href="https://news.careers360.com/delhi-coaching-centre-where-3-died-falsely-showed-basement-store-room-in-documents" target="_blank" rel="noopener">Careers360 / PTI</a> · <a href="https://www.tribuneindia.com/news/india/delhi-coaching-centre-where-3-died-falsely-showed-basement-as-store-room-in-documents-644189/amp" target="_blank" rel="noopener">Tribune</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-bad">Lives lost</span>Jun 2026 · Aliganj, Lucknow</div>
+          <h3>Coaching building fire kills at least 15, mostly students</h3>
+          <p>Reports put the toll between 12 and 18. One report said the building had no fire exit, and firefighters drilled through a wall to get students out. After it, Nagpur found 141 coaching centres violating fire norms.</p>
+          <p class="catch"><b>How to use it:</b> as the emotional opener on why fire-safety documents have to be real and current. Don't claim this building had a forged NOC; reports don't say so.</p>
+          <p class="src"><a href="https://scroll.in/latest/1093759/lucknow-14-killed-as-fire-breaks-out-at-coaching-centre-building" target="_blank" rel="noopener">Scroll</a> · <a href="https://www.onmanorama.com/news/india/2026/06/22/lucknow-coaching-centre-fire-deaths.html" target="_blank" rel="noopener">Onmanorama</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-warn">Ghost faculty</span>Jul 2024 · Tamil Nadu</div>
+          <h3>353 faculty listed in several engineering colleges at the same time</h3>
+          <p>On 23 July 2024, Arappor Iyakkam reported 353 full-time faculty on the payrolls of more than one Anna University-affiliated engineering college, between 2 and 11 colleges each. The Governor directed show-cause notices to 100 colleges.</p>
+          <p class="catch"><b>SatyaPatra:</b> cross-institution memory. Faculty identifiers (salted PAN/ID hashes) and photo hashes are compared across every application. The same person full-time in two places is flagged immediately.</p>
+          <p class="src"><a href="https://www.dtnext.in/news/chennai/ghost-faculties-anna-univ-sends-notices-to-100-colleges-797156" target="_blank" rel="noopener">DT Next</a> · <a href="https://etico.iiep.unesco.org/en/over-1-lakh-ghost-teachers-engineering-colleges-eliminated" target="_blank" rel="noopener">UNESCO-IIEP ETICO (AICTE: 1 lakh+ ghost teachers removed)</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-warn">Inspection risk</span>Feb 2025 · CBI case</div>
+          <h3>NAAC inspection committee arrested for bribes over an A++ grade</h3>
+          <p>CBI arrested the committee chairman and members along with officials of the institution under review. Reports say ₹1.8 crore was demanded at first. NAAC later removed about 900 assessors.</p>
+          <p class="catch"><b>The lesson for judges:</b> a single human inspection can be bought or staged. Machine pre-checks that are evidence-linked and logged in a tamper-evident audit trail make that much harder.</p>
+          <p class="src"><a href="https://news.careers360.com/naac-inspection-committee-chairman-jnu-professor-among-10-held-cbi-for-graft" target="_blank" rel="noopener">Careers360</a> · <a href="https://www.tribuneindia.com/news/india/cbi-arrests-jnu-professor-9-others-for-graft" target="_blank" rel="noopener">Tribune</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-warn">False data</span>Apr 2017 · Hindustan Times</div>
+          <h3>One in three technical institutes filed false data for AICTE approval</h3>
+          <p>Citing sources, the paper reported that one-third of engineering and technical institutes were caught submitting fraudulent data on staff, students, laboratories and infrastructure to get AICTE approval.</p>
+          <p class="catch"><b>SatyaPatra:</b> satellite building footprints against claimed built-up area, geotag and timestamp checks on lab photos, and photo-reuse detection across institutions.</p>
+          <p class="src"><a href="https://www.pressreader.com/india/hindustan-times-chandigarh/20170413/281779923991822" target="_blank" rel="noopener">Hindustan Times (PressReader)</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-bad">Fake institutions</span>Aug 2023 · CBI FIR</div>
+          <h3>830 fake or non-operational institutes took ₹144 crore in scholarships</h3>
+          <p>The Ministry of Minority Affairs found 830 institutions across 21 states (2017-22) that were fake, partly fake or not operating. Bank accounts were opened with fake documents.</p>
+          <p class="catch"><b>SatyaPatra:</b> checks that the institution exists. Does the claimed campus have buildings on satellite imagery? Do the photos carry matching geotags? Do the address, registration and approval history agree across records?</p>
+          <p class="src"><a href="https://scroll.in/latest/1055121/830-fake-institutes-got-rs-144-crore-in-minority-scholarship-funds-alleges-cbi" target="_blank" rel="noopener">Scroll</a> · <a href="https://www.thenewsminute.com/news/cbi-registers-fir-rs-14433-crore-minority-scholarship-scam-181698" target="_blank" rel="noopener">The News Minute</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-bad">Fake FDRs</span>2026 · Chandigarh & Panchkula</div>
+          <h3>Fake fixed-deposit receipts handed to government bodies</h3>
+          <p>A Kerala Accountant General circular (20 Jul 2026) cites about ₹645 crore of fake FDRs reported through an IDFC FIRST Bank branch in Chandigarh. Separately, about ₹150–160 crore of Panchkula civic funds was allegedly diverted through fake FDRs.</p>
+          <p class="catch"><b>SatyaPatra:</b> treats an FDR as one more document type. It is confirmed with the issuing bank through the registered bank contact, never a number printed on the receipt. This covers PS 26265's core risk inside our platform.</p>
+          <p class="src"><a href="https://cag.gov.in/uploads/ae_circulars_office_orders/CircularsOfficeOrders-06a759096da1e76-62695435.pdf" target="_blank" rel="noopener">CAG / AG Kerala circular</a> · <a href="https://thelogicalindian.com/fake-fdrs-missing-funds-%e2%82%b9160-crore-scam-linked-to-kotak-mahindra-bank-under-investigation/" target="_blank" rel="noopener">The Logical Indian</a></p>
+        </article>
+        <article class="card case">
+          <div class="meta"><span class="chip c-bad">AI forgery</span>Aug 2026 · Gujarat · Jul 2026 · Delhi HC</div>
+          <h3>AI-generated documents in tender fraud; Delhi HC hears PIL on fake technical institutes</h3>
+          <p>Police arrested three men who used AI-generated IDs and purchase orders in a ₹9.6 lakh Civil Hospital tender fraud. Separately, in a PIL on fake universities, AICTE told the Delhi High Court it has a mechanism to identify and penalise unapproved institutions, and the bench called the issue a serious concern.</p>
+          <p class="catch"><b>Pitch line:</b> forgery now costs nothing. Verification has to be automatic, and it has to happen at the source.</p>
+          <p class="src"><a href="https://ianslive.in/gujarat-gang-used-ai-generated-documents-to-pull-off-rs-960-lakh-civil-hospital-tender-fraud-three-held--20260804150515" target="_blank" rel="noopener">IANS</a> · <a href="https://www.latestly.com/agency-news/india-news-delhi-hc-fake-universities-pil-aicte-says-it-has-robust-mechanism-to-identify-penalise-unapproved-technical-institutions-7535338.html" target="_blank" rel="noopener">LatestLY / PTI</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- REPLAY -->
+    <section id="replay">
+      <div class="eyebrow">04 · Replay: the Hyderabad NOC case</div>
+      <h2>What actually happened, and what would have happened with SatyaPatra</h2>
+      <p class="muted">Use this as one slide or a 20-second section of the live demo. The left column only states what the reports say.</p>
+      <div class="grid2">
+        <div class="replay real">
+          <div class="step"><span class="t">Before</span><span>Colleges submit fire NOCs with a forged HYDRAA commissioner signature to get affiliation.</span></div>
+          <div class="step"><span class="t">Later</span><span>Education officers refer 76 NOCs back to HYDRAA for manual checking.</span></div>
+          <div class="step"><span class="t">Result</span><span>8 found fake. Police case registered.</span></div>
+          <div class="step"><span class="t">Aug 2026</span><span>60 more institutions' NOCs still being verified. HYDRAA reviewing all colleges inside the ORR.</span></div>
+        </div>
+        <div class="replay">
+          <div class="step"><span class="t">t + 0 s</span><span>College uploads Fire NOC PDF to the AICTE portal.</span></div>
+          <div class="step"><span class="t">t + 3 s</span><span>Classified as <em>Fire NOC</em>. Fields extracted: issuer HYDRAA, NOC number, validity, premises, signatory.</span></div>
+          <div class="step"><span class="t">t + 6 s</span><span>Issuer registry lookup: no record for that NOC number. <span class="chip c-bad">Mismatch detected</span></span></div>
+          <div class="step"><span class="t">t + 8 s</span><span>Forensics: the seal scan is pixel-identical to a seal on another institution's scanned NOC (real scans never match exactly); the date field font differs from the rest of the page.</span></div>
+          <div class="step"><span class="t">t + 9 s</span><span>Evidence card sent to the regional officer's queue as top risk. The institution is asked for clarification before approval moves forward.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section id="solution">
+      <div class="eyebrow">05 · The solution</div>
+      <h2>SatyaPatra: five engines, one evidence report</h2>
+      <p>One sentence for judges: <strong>SatyaPatra checks every approval document at the source in seconds, and every flag it raises comes with proof.</strong> Each engine maps to a requirement written in the PS.</p>
+      <pre class="mermaid">
+flowchart LR
+  A[Institution uploads application + documents] --> B[READ: classify, OCR, extract fields]
+  B --> C[CHECK: APH 2024-27 rulebook, expiry, cross-document and past-record consistency]
+  B --> D[DETECT: PDF forensics, edits, copy-move, fonts, AI-generation, duplicates across institutions]
+  B --> E[CONFIRM: issuer trust registry, Tier 1 signature/QR/DigiLocker, Tier 2 issuer portal, Tier 3 issuer confirms]
+  B --> F[SEE: satellite footprint vs claimed area, photo geotag/time, photo reuse, lab equipment count]
+  C --> G[Evidence report: 6 statuses per document]
+  D --> G
+  E --> G
+  F --> G
+  G --> H[Officer dashboard: risk queue, alerts, decision]
+  H --> I[Hash-chained audit log]
+  G --> J[Institution self-check before submitting]
+      </pre>
+      <div class="grid2">
+        <div class="card engine"><span class="k">READ</span><div><h3>Understand any document</h3><ul><li>Classifies the document type and picks the right checklist for the application category (EoA, change of name, intake increase…)</li><li>OCR for English and Indian languages, plus stamp and seal detection</li><li>A local open-source LLM turns text into structured fields; outputs are validated against a schema</li></ul></div></div>
+        <div class="card engine"><span class="k">CHECK</span><div><h3>Rules officers can edit</h3><ul><li>APH 2024-27 requirements written as YAML rules, each tagged with its handbook clause</li><li>Missing, expired and incomplete documents; land, built-up area and intake checked against norms</li><li>Cross-document checks: same address, owner and dates everywhere; compared with last year's approved record</li></ul></div></div>
+        <div class="card engine"><span class="k">DETECT</span><div><h3>Forensics that explain themselves</h3><ul><li>PDF structure: incremental saves, edits after signing, editing-software signatures, white patches laid over text, a different font on a key field</li><li>Image: error-level analysis finds pasted regions in scans; DocTamper (CVPR 2023) is the benchmark for the next, learned detector</li><li>Exact fingerprints catch the same scanned seal or lab photo reused across institutions. Seals are matched to the issuer's registered specimen with OpenCV ORB + RANSAC: in our tests genuine scans scored 288+ matching points and fakes 29 or fewer, a gap image hashes could not show</li></ul></div></div>
+        <div class="card engine"><span class="k">CONFIRM</span><div><h3>Verify at the source</h3><ul><li><b>Tier 1:</b> digital signatures validated to India's CCA root; DigiLocker-issued documents; QR codes accepted only from allow-listed official domains</li><li><b>Tier 2:</b> lookup on the issuer's own portal by reference number</li><li><b>Tier 3:</b> one-click confirm or deny request to the issuer's <em>registered</em> contact, never a contact printed on the document</li></ul></div></div>
+        <div class="card engine"><span class="k">SEE</span><div><h3>Check the physical claims</h3><ul><li>Google Open Buildings footprints and 2.5D heights inside the campus boundary, compared with the claimed built-up area</li><li>Photo EXIF: GPS inside the campus? Taken this year? Matches the claimed lab?</li><li>Open-vocabulary object detection counts workstations in lab photos against the APH norm</li></ul></div></div>
+        <div class="card engine"><span class="k">DECIDE</span><div><h3>Humans stay in charge</h3><ul><li>Six statuses taken straight from the PS: <span class="chip c-ok">Verified</span> <span class="chip c-bad">Mismatch</span> <span class="chip c-warn">Expired</span> <span class="chip c-pend">Pending</span> <span class="chip c-seal">Source unavailable</span> <span class="chip c-warn">Manual review</span></li><li>Risk-ranked queue, alerts, SLA reminders</li><li>Every rule run, issuer response and officer action goes into a SHA-256 hash-chained audit log</li></ul></div></div>
+      </div>
+    </section>
+
+    <!-- EDGE -->
+    <section id="edge">
+      <div class="eyebrow">06 · Existing solutions and their gaps</div>
+      <h2>Why judges should pick us over everything that exists</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Existing option</th><th>What it does</th><th>Gap</th><th>What SatyaPatra adds</th></tr></thead>
+        <tbody>
+          <tr><td><b>Manual scrutiny on the AICTE portal</b> + expert visits</td><td>Officers read uploads; committees inspect</td><td>Can't confirm every document with its issuer. Results vary by reviewer. Inspections can be staged (borrowed faculty) or bribed (NAAC 2025).</td><td>Pre-checks 100% of documents, ranks risk, attaches evidence, logs every step</td></tr>
+          <tr><td><b>DigiLocker / API Setu</b></td><td>Authentic documents pushed by issuers</td><td>Covers only documents issued into it. Most fire NOCs, lease deeds, building completion certificates and affidavits aren't there.</td><td>Uses it as one Tier-1 source and covers everything else through the issuer registry</td></tr>
+          <tr><td><b>Commercial KYC / forgery APIs</b> (HyperVerge, IDfy, Signzy, AuthBridge, Surepass)</td><td>Aadhaar/PAN KYC, ID-card tampering</td><td>Built for identity documents, not regulatory ones. Paid per call. Cloud-hosted, so institution data leaves government servers. Scores without reasons. No APH rules.</td><td>Regulatory document types, on-prem, rules plus evidence, ₹0 licence</td></tr>
+          <tr><td><b>Generic OCR / document AI</b> (Azure, Google, ABBYY)</td><td>Extracts fields</td><td>Doesn't judge authenticity or compliance. Paid. Foreign cloud.</td><td>Extraction is only step one of five</td></tr>
+          <tr><td><b>The typical SIH team</b></td><td>OCR + ChatGPT + dashboard</td><td>LLM gives a verdict with no proof. No issuer confirmation. No memory across institutions. No reality check on buildings.</td><td>All of those, plus rules officers can edit and a status set that matches the PS word for word</td></tr>
+        </tbody>
+      </table></div>
+      <h3 style="margin-top:6px">Ten differentiators to say out loud</h3>
+      <ol class="tight">
+        <li><b>Verify at the source.</b> Forgers can beat a detector. They can't make the issuer confirm a NOC it never issued.</li>
+        <li><b>Never trust the document's own QR or phone number</b> (exactly how the DU fakes worked). Only registry-listed official domains and contacts count.</li>
+        <li><b>Space-verified infrastructure:</b> satellite building data checks claimed area for free.</li>
+        <li><b>Memory across institutions:</b> the same scanned seal, photo or faculty member reused anywhere gets flagged.</li>
+        <li><b>An evidence card for every flag:</b> the cropped region, the rule, the APH clause and the source response. Easy to defend in a legal challenge.</li>
+        <li><b>Rules as configuration:</b> when the APH changes next year, officers edit rules, not code. Rules are versioned by academic year.</li>
+        <li><b>Six statuses that match the PS exactly,</b> so the evaluator can tick each requirement.</li>
+        <li><b>Fully on-prem and open source:</b> data never leaves AICTE (DPDP Act 2023), and no vendor lock-in.</li>
+        <li><b>Institution self-check:</b> colleges get a readiness score before they submit, so there are fewer deficiency rounds. The tool helps both sides.</li>
+        <li><b>Tamper-evident audit chain:</b> nobody can quietly edit a decision later. No blockchain cost.</li>
+      </ol>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack">
+      <div class="eyebrow">07 · Free tech stack</div>
+      <h2>Every part is free and open source</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Layer</th><th>Tool</th><th>Licence</th><th>Cost</th></tr></thead>
+        <tbody>
+          <tr><td>Frontend</td><td>React 18 + TypeScript + Vite on UX4G 3.0 tokens (Government of India design system), Noto Sans, Lucide icons</td><td>MIT / OFL / ISC</td><td>₹0</td></tr>
+          <tr><td>API and jobs</td><td>FastAPI (Python 3.12); Redis + RQ workers for approval-season peaks</td><td>MIT / BSD</td><td>₹0</td></tr>
+          <tr><td>Database</td><td>PostgreSQL 16 (SQLite in the laptop demo, same code); PostGIS for campus polygons at national scale</td><td>PostgreSQL</td><td>₹0</td></tr>
+          <tr><td>Reading</td><td>PyMuPDF text with positions; RapidOCR (PaddleOCR models on ONNX, CPU) for scans and photos</td><td>AGPL-3.0 / Apache 2.0</td><td>₹0</td></tr>
+          <tr><td>Local AI</td><td>Ollama + Llama 3.2 3B, only for unfamiliar layouts; every value must appear in the document</td><td>MIT / Llama 3.2 Community Licence</td><td>₹0</td></tr>
+          <tr><td>Confirm</td><td>pyHanko (PAdES signature validation), OpenCV QR decoding, issuer-portal lookup, signed one-time links</td><td>MIT / Apache 2.0</td><td>₹0</td></tr>
+          <tr><td>Forensics</td><td>PDF layer and incremental-save analysis, error level analysis, OpenCV ORB + RANSAC seal matching, shared-scan fingerprints</td><td>Apache 2.0 / ours</td><td>₹0</td></tr>
+          <tr><td>Satellite and photos</td><td>Shapely footprint area vs claimed area, Open Buildings format, live OpenStreetMap buildings, photo GPS and date</td><td>BSD / CC BY 4.0 / ODbL</td><td>₹0</td></tr>
+          <tr><td>Rules and audit</td><td>YAML rulebook tied to APH clauses; SHA-256 hash-chained ledger</td><td>ours</td><td>₹0</td></tr>
+          <tr><td>Production</td><td>Docker on NIC / MeghRaj government cloud that AICTE already uses</td><td>existing infra</td><td>No new licence</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted">Avoid in the build: YOLOv8 (AGPL), LayoutLMv3 (non-commercial weights), TruFor (non-commercial). Judges sometimes ask about licences; this shows you checked.</p>
+    </section>
+
+    <!-- DATA -->
+    <section id="data">
+      <div class="eyebrow">08 · Data plan</div>
+      <h2>The data we need, and where each piece comes from</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Data</th><th>Source</th><th>Used for</th></tr></thead>
+        <tbody>
+          <tr><td><b>Synthetic AICTE application corpus</b> (target 300 applications, about 2,400 documents)</td><td>We generate it: templates for Fire NOC, lease deed, building completion certificate, affidavit, FDR, faculty list, land documents. Faker for Indian names and addresses.</td><td>Ground truth for extraction and rule accuracy. The PS explicitly allows synthetic data.</td></tr>
+          <tr><td><b>Forgery set</b> with 12 manipulation types</td><td>Our injector: date edit, amount edit, signature paste, seal paste, font swap, cropped and re-saved, metadata mismatch, expired document, swapped institution name, copied photo, AI-generated page, wrong QR</td><td>Detection precision and recall for each forgery type</td></tr>
+          <tr><td><b>Real public EoA letters</b></td><td>Institutions publish them under mandatory disclosure (APH Annexure 18). Hundreds of PDFs are online.</td><td>Real-world extraction and comparison with past records</td></tr>
+          <tr><td><b>APH 2024-27 handbook</b></td><td>aicte.gov.in</td><td>The rulebook and clause references</td></tr>
+          <tr><td><b>Approved and unapproved institution lists</b></td><td>AICTE public lists and dashboard</td><td>Institution existence and identity checks</td></tr>
+          <tr><td><b>DocTamper</b> (CVPR 2023, about 170k images)</td><td><a href="https://github.com/qcf-568/DocTamper" target="_blank" rel="noopener">github.com/qcf-568/DocTamper</a></td><td>Training and benchmarking the tampered-text detector</td></tr>
+          <tr><td><b>Google Open Buildings</b> + Sentinel-2</td><td><a href="https://sites.research.google/open-buildings/" target="_blank" rel="noopener">sites.research.google/open-buildings</a>, Copernicus</td><td>Comparing satellite footprints with claimed area</td></tr>
+          <tr><td><b>Your own college's EoA documents</b> (with written permission, redacted)</td><td>Your college's AICTE coordinator</td><td>Real-world test plus a stakeholder quote for the PPT</td></tr>
+        </tbody>
+      </table></div>
+      <p class="callout"><b>The best move you can make this week:</b> interview the person in your college who files the AICTE EoA every year. Ask what documents they upload, which ones get queried, how long the process takes, and what they wish existed. Put one sentence from them on Slide 2. Almost no other team will have a real stakeholder voice.</p>
+    </section>
+
+    <!-- VALIDATE -->
+    <section id="validate">
+      <div class="eyebrow">09 · Validation and feasibility</div>
+      <h2>How we prove it works</h2>
+      <p class="muted">These are targets to measure, not results. Report whatever numbers you actually get. Judges trust honest numbers more than perfect ones.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>What</th><th>Metric</th><th>Target</th><th>How we test</th></tr></thead>
+        <tbody>
+          <tr><td>Field extraction</td><td>Field-level F1</td><td class="mono">≥ 0.90</td><td>Synthetic corpus + 50 real EoA PDFs, labelled by hand</td></tr>
+          <tr><td>Rule checks</td><td>Correct deficiency detection</td><td class="mono">≥ 95%</td><td>Seeded missing, expired and inconsistent cases</td></tr>
+          <tr><td>Forgery flags</td><td>Precision at the "red" tier</td><td class="mono">≥ 0.90</td><td>12-type forgery set + DocTamper test split</td></tr>
+          <tr><td>Forgery flags</td><td>Recall across all tiers</td><td class="mono">≥ 0.80</td><td>Same sets, reported per forgery type</td></tr>
+          <tr><td>Source verification</td><td>Correct status from the mock issuer service</td><td class="mono">100%</td><td>Mock HYDRAA-style issuer API with real and fake numbers</td></tr>
+          <tr><td>Speed</td><td>Time per application on CPU</td><td class="mono">&lt; 60 s</td><td>Benchmark on a laptop, then a 4-vCPU VM</td></tr>
+          <tr><td>Human benefit</td><td>Review time and catches: manual vs assisted</td><td class="mono">measure</td><td>2 faculty volunteers review 20 applications each way</td></tr>
+          <tr><td>Robustness</td><td>Red-team catch rate</td><td class="mono">measure</td><td>Teammates forge documents with Photoshop and AI tools and try to get past us</td></tr>
+        </tbody>
+      </table></div>
+      <div class="grid3">
+        <div class="card"><h3 style="font-size:1rem">Technical feasibility</h3><p class="muted" style="margin-top:6px;font-size:.92rem">Every component is mature open source. A working core (upload → extract → rules → 3 forensic checks → evidence card) is doable before the deadline.</p></div>
+        <div class="card"><h3 style="font-size:1rem">Economic feasibility</h3><p class="muted" style="margin-top:6px;font-size:.92rem">₹0 licence. Runs on CPU on existing government cloud. The real cost of today's process is officer hours plus the cost of a missed forgery.</p></div>
+        <div class="card"><h3 style="font-size:1rem">Sustainability</h3><p class="muted" style="margin-top:6px;font-size:.92rem">Open source under AICTE. The same engine serves UGC, NMC, PCI, NCTE and state boards, which all face the same forged-NOC problem.</p></div>
+      </div>
+    </section>
+
+    <!-- WINNERS -->
+    <section id="winners">
+      <div class="eyebrow">10 · What past winners did</div>
+      <h2>Patterns from SIH winners and finalists</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Team / source</th><th>PS</th><th>What they did that mattered</th></tr></thead>
+        <tbody>
+          <tr><td>Kal Hona Code, K L University (SIH 2024 winner)</td><td>SIH1729, AI-supported AICTE approval portal</td><td>Full-stack AI solution aimed at a real AICTE process. Praised for real-world use and scalability. Got funding for a prototype.</td></tr>
+          <tr><td>"Dora the Explorer" (SIH 2023 winner)</td><td>SIH1370, real-time infrastructure monitoring (Jharkhand)</td><td>Picked from 234 PSs using clear filters: no dependencies, fewer competitors, no hardware. Spent about 60% of the time understanding the problem and tested the idea with real contractors. Every member presented their own part. Used a Business Model Canvas.</td></tr>
+          <tr><td>SIH 2025 finalist (KunnuSherry)</td><td>Traffic + ambulance override</td><td>A 6-slide deck that was mostly pictures. Comparison and impact shown as charts. Real photos of the build. Deployed link, demo video, GitHub repo and a report PDF all on the slides.</td></tr>
+          <tr><td>Khwaab Society, RCCIIT (SIH 2025 winner, ₹1.5 lakh)</td><td>25076, AI farmer advisory (Kerala)</td><td>A clear user (farmers) and one strong AI use case</td></tr>
+          <tr><td>Two-time winner (dev.to)</td><td>Varied</td><td>Know your weak spots before judges do. Justify every tech choice. Plan for the app crashing. Make sure every member can deliver the whole pitch.</td></tr>
+          <tr><td>Reskilll winner account</td><td>Government workflow automation</td><td>Switched to a less crowded government PS. A rough working prototype beat polished slides. Architecture was fixed weeks ahead. A 3-minute demo script rehearsed 5 times, plus a backup video.</td></tr>
+        </tbody>
+      </table></div>
+      <div class="card">
+        <h3 style="font-size:1rem">Grand finale judging (from the 2023 winner's account)</h3>
+        <ul class="tight" style="margin-top:8px;font-size:.92rem">
+          <li><b>Round 1 · 20%:</b> presentation, uniqueness, feasibility. Judges gave feature asks such as integrations and inclusivity.</li>
+          <li><b>Round 2 · 30%:</b> tech and execution. Were the round 1 asks integrated end to end?</li>
+          <li><b>Round 3 · 50%:</b> the finished product, commercial viability, the end user's view. Their app broke an hour before this round. Use Git branches and freeze features early.</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;font-size:.88rem">Format: 36 hours offline at nodal centres, with mentoring rounds in between. The 2026 finale is proposed for December 2026. Teams are 6 members, including at least one woman; confirm the current rules with your SPOC.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem">How winners make their visuals (all free)</h3>
+        <ul class="tight" style="margin-top:8px;font-size:.92rem">
+          <li><b>Architecture and flowcharts:</b> Napkin AI (text to diagram), Mermaid, Excalidraw</li>
+          <li><b>Slides:</b> the official SIH template, finished in Canva or Google Slides, exported to PDF</li>
+          <li><b>Illustrations and icons:</b> unDraw, Storyset, Lucide. Keep one style.</li>
+          <li><b>Proof:</b> real screenshots of your running app with realistic sample data. The finalist above said real photos make judges feel the work is "80–90% done".</li>
+          <li><b>Charts:</b> show comparisons as bar or pie charts, never as paragraphs</li>
+          <li><b>Demo video (2 min):</b> OBS Studio to record, Clipchamp or CapCut to edit, captions on. Prefer a real screen recording over AI-generated video.</li>
+          <li><b>Proofread AI-written text.</b> The finalist warns that AI makes spelling mistakes and exaggerates claims.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PPT -->
+    <section id="ppt">
+      <div class="eyebrow">11 · The idea submission deck</div>
+      <h2>The official 6-slide format, filled in for SatyaPatra</h2>
+      <p class="muted">The SIH template allows 6 slides including the title, exported as PDF only. Use bullets and visuals, no paragraphs. At most 6 bullets per slide.</p>
+      <div class="card slide"><span class="n">1</span><div><h3>Title</h3><p style="font-size:.93rem;margin-top:4px">PS ID SIH26261, PS title, theme Smart Automation, category Software, team name, team ID. Keep it plain. Every member checks the IDs.</p></div></div>
+      <div class="card slide"><span class="n">2</span><div><h3>Proposed solution</h3><ul class="tight" style="font-size:.93rem;margin-top:6px"><li>Left: the problem as a headline photo strip (Hyderabad forged NOCs 2026, Delhi basement 2024, DU AI fakes 2026)</li><li>Middle: "SatyaPatra checks every approval document at the source in seconds, with evidence" + the 5 engines as icons</li><li>Right: what's new (the ten differentiators, in short) + one quote from your college's AICTE coordinator</li><li>Bottom: deployed demo link + QR to a 2-minute video</li></ul></div></div>
+      <div class="card slide"><span class="n">3</span><div><h3>Technical approach</h3><ul class="tight" style="font-size:.93rem;margin-top:6px"><li>The architecture flow from section 05, redrawn in Napkin or Excalidraw</li><li>Two real screenshots: an evidence card on a forged NOC, and the satellite footprint check on your own campus</li><li>The tech stack as a logo strip down the side</li><li>GitHub link + report PDF link</li></ul></div></div>
+      <div class="card slide"><span class="n">4</span><div><h3>Feasibility and viability</h3><ul class="tight" style="font-size:.93rem;margin-top:6px"><li>Feasibility: open source, ₹0 licence, CPU-only, runs as a sidecar API next to the AICTE portal</li><li>Risks → mitigations: false positives → advisory tiers + evidence; issuers without APIs → 3-tier registry; privacy → on-prem + salted hashes; APH changes → editable rules</li><li>Pilot path: our college → one regional office → national</li></ul></div></div>
+      <div class="card slide"><span class="n">5</span><div><h3>Impact and benefits</h3><ul class="tight" style="font-size:.93rem;margin-top:6px"><li>Students: safer campuses and real faculty</li><li>AICTE: risk-ranked queue, consistent checks, an audit trail that stands up in court</li><li>Institutions: a self-check before submitting means fewer deficiency rounds</li><li>A chart of your measured results (extraction F1, catch rate per forgery type, review time manual vs assisted)</li><li>Can extend to UGC, NMC, NCTE, PCI and state boards</li></ul></div></div>
+      <div class="card slide"><span class="n">6</span><div><h3>Research and references</h3><ul class="tight" style="font-size:.93rem;margin-top:6px"><li>APH 2024-27, DocTamper (CVPR 2023), Google Open Buildings, PS text</li><li>News sources from section 03, with dates</li><li>The stakeholder interview summary</li><li>3–4 UI screenshots as thumbnails</li></ul></div></div>
+    </section>
+
+    <!-- DEMO -->
+    <section id="demo">
+      <div class="eyebrow">12 · Pitch and live demo</div>
+      <h2>The first 30 seconds</h2>
+      <p class="script">"On 5 August 2026, police in Hyderabad booked eight colleges for submitting forged fire safety certificates. They were caught only because officials sent 76 certificates back to the fire authority, one by one. Sixty more are still being checked. Six weeks earlier, a fire in a Lucknow coaching building killed at least fifteen students. A fire certificate isn't paperwork. It decides whether students get out alive. SatyaPatra checks every approval document at the source, in seconds, and shows the proof."</p>
+      <h3>3-minute demo script</h3>
+      <ol class="tight">
+        <li><b>0:00–0:30</b> The opener above, with the news headline on screen.</li>
+        <li><b>0:30–1:10</b> Upload a genuine application. Everything comes back green: rules passed, signature validated, issuer confirmed. The officer sees "Verified".</li>
+        <li><b>1:10–2:00</b> Upload the same application with a forged fire NOC. The status turns red. Open the evidence card: issuer says "no such NOC", the seal scan is pixel-identical to another institution's, the date font is off. Every flag links to its APH clause.</li>
+        <li><b>2:00–2:30</b> The satellite tab: claimed built-up area 12,000 m² against roughly 3,000 m² of building footprint on the map. Flagged for physical inspection.</li>
+        <li><b>2:30–3:00</b> The dashboard risk queue, the audit log, and the institution self-check. Close: "The officer decides. SatyaPatra makes sure they decide on the truth."</li>
+      </ol>
+      <p class="muted">Keep a recorded backup of the demo. Rehearse at least 5 times. Each member presents the engine they built.</p>
+    </section>
+
+    <!-- JUDGE -->
+    <section id="judge">
+      <div class="eyebrow">13 · Judge interrogation</div>
+      <h2>The hardest questions, with answers</h2>
+      <p class="muted">Practise these out loud. A confident short answer beats a long one.</p>
+
+      <div class="qgroup"><h3>Need and problem</h3>
+        <details class="qa"><summary>AICTE already has a portal and scrutiny committees. Why is this needed?</summary><div class="a"><p>The portal collects documents; it can't confirm them. In 2017 the Hindustan Times reported that one in three technical institutes was caught filing false data for AICTE approval. The Hyderabad forgeries were found only after a manual referral of 76 NOCs. We make that check the default for every document, in seconds, and officers spend their time on the risky ones.</p></div></details>
+        <details class="qa"><summary>Isn't this a rare problem? Most institutions are honest.</summary><div class="a"><p>Exactly why we rank by risk. Honest institutions go green fast and get approved sooner. The rare bad case is the one that costs lives or crores, as the cases on our slide show.</p></div></details>
+        <details class="qa"><summary>Who are your users, and did you talk to any?</summary><div class="a"><p>AICTE regional officers and scrutiny committees, and institutions on the submitting side. We interviewed our college's AICTE coordinator, who files the EoA every year. (Do this before the deadline and quote them.)</p></div></details>
+      </div>
+
+      <div class="qgroup"><h3>AI reliability</h3>
+        <details class="qa"><summary>What if your AI flags a genuine document as forged? You'll harass honest institutions.</summary><div class="a"><p>Flags are advisory, as the PS requires. A red status means "needs review", never "rejected". Every flag shows its evidence and confidence, and the institution can respond in the portal. We tune the red tier for precision and publish our false-positive rate per document type.</p></div></details>
+        <details class="qa"><summary>Forgers will learn to beat your detector.</summary><div class="a"><p>Forensics is only the second layer. The first is confirmation at the source: a forger can't make HYDRAA's records contain a NOC number that was never issued, and can't fake a CCA-rooted digital signature. Memory across institutions also catches reuse that individual forgers can't see.</p></div></details>
+        <details class="qa"><summary>Why not just use ChatGPT?</summary><div class="a"><p>Three reasons. Institution data can't go to a foreign cloud. An LLM can read a document but can't tell whether it's authentic. And regulators need decisions they can reproduce. We use a local open model only to extract fields; deterministic rules and source checks make the calls.</p></div></details>
+        <details class="qa"><summary>How do you detect AI-generated documents?</summary><div class="a"><p>We look for generation and editing traces (missing camera noise, uniform rendering, metadata, font anomalies). But we don't depend on it: an AI-made NOC still fails the issuer lookup.</p></div></details>
+        <details class="qa"><summary>Scanned documents with stamps, handwriting, poor quality?</summary><div class="a"><p>An image-quality score comes first. A low-quality scan triggers "please re-upload", never a forgery flag, so rural or small institutions aren't penalised for bad scanners. Handwritten fields go to manual review.</p></div></details>
+        <details class="qa"><summary>What's your accuracy?</summary><div class="a"><p>Give your measured numbers per engine (extraction F1, precision and recall per forgery type) and explain the test sets. Never quote a number you didn't measure.</p></div></details>
+      </div>
+
+      <div class="qgroup"><h3>Verification and integration</h3>
+        <details class="qa"><summary>Most issuers, like a municipal fire office, have no API. How do you verify?</summary><div class="a"><p>Three tiers. Tier 1: cryptographic checks (digital signatures, DigiLocker, official QR codes). Tier 2: the issuer's own online portal by reference number, where one exists. Tier 3: a one-click confirm or deny request to the issuer's registered official contact. If nobody answers within the SLA, the status becomes "Source unavailable" and the case goes to manual review. That status is listed in the PS itself.</p></div></details>
+        <details class="qa"><summary>Who maintains the issuer registry?</summary><div class="a"><p>AICTE regional offices, seeded from government directories. Each successful verification strengthens it. Contacts printed on submitted documents are never added.</p></div></details>
+        <details class="qa"><summary>How is this different from DigiLocker?</summary><div class="a"><p>DigiLocker only holds documents issuers push into it. Most fire NOCs, lease deeds, completion certificates and affidavits aren't there. We use DigiLocker where available and cover the rest.</p></div></details>
+        <details class="qa"><summary>How does it plug into the AICTE portal?</summary><div class="a"><p>As a sidecar REST API. The portal sends an application ID and documents; we return a validation report as JSON with a webhook for status changes. AICTE's workflow and login stay as they are.</p></div></details>
+        <details class="qa"><summary>What if the authority itself issued a genuine but wrong NOC, for example through a bribe?</summary><div class="a"><p>Then the document is authentic, and we say so. But our reality checks still apply: use mismatches (the Delhi basement case), satellite footprint against claimed area, and photos against claims. Those flag the gap between paper and reality.</p></div></details>
+      </div>
+
+      <div class="qgroup"><h3>Satellite and infrastructure</h3>
+        <details class="qa"><summary>Satellite resolution is too low, and buildings have several floors.</summary><div class="a"><p>We use it only as a sanity check for gross mismatches, such as 12,000 m² claimed against 3,000 m² of footprint. The 2.5D dataset gives height estimates to approximate floors. It triggers a decision to inspect; it never replaces inspection.</p></div></details>
+        <details class="qa"><summary>What about a new building that isn't in satellite data yet?</summary><div class="a"><p>We check the imagery date. If the construction date is after it, the status is "pending evidence", and we ask for a geotagged construction photo set.</p></div></details>
+      </div>
+
+      <div class="qgroup"><h3>Privacy, law and ethics</h3>
+        <details class="qa"><summary>Privacy and the DPDP Act?</summary><div class="a"><p>Everything runs on-prem. Role-based access, encryption at rest, minimal retention. Personal IDs used for duplicate checks are salted hashes, never stored raw. Every access is logged.</p></div></details>
+        <details class="qa"><summary>Is an AI flag legally valid?</summary><div class="a"><p>No, and we never claim it is. It's a preliminary indicator. The evidence is the issuer's response and the original document, preserved with hashes in the audit chain, which keeps the chain of custody intact.</p></div></details>
+        <details class="qa"><summary>Could this be misused to target certain institutions?</summary><div class="a"><p>The same rules run on every application, rules are versioned and visible, and every officer action is logged in the hash chain. That makes selective targeting easier to detect than today.</p></div></details>
+      </div>
+
+      <div class="qgroup"><h3>Cost, scale and sustainability</h3>
+        <details class="qa"><summary>What does it cost?</summary><div class="a"><p>₹0 in licences, because every component is open source. It runs on CPU on existing government cloud. Compare that with commercial verification APIs charged per call, plus data leaving government servers.</p></div></details>
+        <details class="qa"><summary>Can it handle peak season when thousands of institutions upload at once?</summary><div class="a"><p>Queue-based workers scale horizontally. Issuer lookups are cached, and heavy forensics run in batches. Each application targets under a minute on CPU, and we can show the benchmark.</p></div></details>
+        <details class="qa"><summary>The APH changes every cycle. Then what?</summary><div class="a"><p>Rules are YAML, edited in a UI, versioned by academic year and tagged with clause numbers. No code change is needed.</p></div></details>
+        <details class="qa"><summary>What happens after the hackathon?</summary><div class="a"><p>Pilot with our own college's EoA, then one regional office. It's open source under AICTE. The same engine fits UGC, NMC, NCTE, PCI and state boards. We'll apply for MIC implementation support.</p></div></details>
+        <details class="qa"><summary>Why not blockchain?</summary><div class="a"><p>A hash-chained log gives tamper evidence without the cost or complexity. If needed, we can publish the daily root hash to a public ledger.</p></div></details>
+      </div>
+
+      <div class="qgroup"><h3>Team and execution</h3>
+        <details class="qa"><summary>What have you actually built versus planned?</summary><div class="a"><p>Be exact: show what runs, and list the rest as roadmap. Judges punish over-claiming more than unfinished work.</p></div></details>
+        <details class="qa"><summary>Why this tech choice (FastAPI, PostgreSQL, RapidOCR…)?</summary><div class="a"><p>Have one line ready for every choice. For example: PostgreSQL because audit-grade records need transactions, and PostGIS adds campus polygons at scale; RapidOCR because it runs the PaddleOCR models on an ordinary CPU and is Apache-licensed.</p></div></details>
+        <details class="qa"><summary>Previous SIH winners built AICTE approval portals. What's new here?</summary><div class="a"><p>They automated the workflow. We verify the truth of what goes through it: confirmation at the source, satellite checks, and memory across institutions. It complements a workflow portal rather than replacing it.</p></div></details>
+      </div>
+    </section>
+
+    <!-- RISKS -->
+    <section id="risks">
+      <div class="eyebrow">14 · Honest weak spots</div>
+      <h2>Where we are vulnerable, and the fix</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>Weak spot</th><th>Mitigation</th></tr></thead>
+        <tbody>
+          <tr><td>Scope is huge: 5 engines</td><td>Build READ + CHECK + CONFIRM (mock issuer) + 3 forensic checks before the idea deadline. SEE and the rest come before the finale.</td></tr>
+          <tr><td>No real AICTE data</td><td>The PS allows synthetic data. Add public EoA PDFs and your own college's documents.</td></tr>
+          <tr><td>Real issuer APIs unavailable</td><td>Mock issuer service in the demo, designed exactly like a real Tier 2 lookup. Be open that it's a mock.</td></tr>
+          <tr><td>The forensic detector can be wrong</td><td>Never the only signal. Advisory tiers. Measured false-positive rate.</td></tr>
+          <tr><td>Satellite checks are coarse</td><td>Gross mismatches only, and they only trigger an inspection.</td></tr>
+          <tr><td>Many teams pick "AI document verification"</td><td>Our edge is the trio no generic team will have: issuer registry, satellite check, memory across institutions. Plus a real stakeholder quote.</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <!-- PLAN -->
+    <section id="plan">
+      <div class="eyebrow">15 · Six days to the deadline</div>
+      <h2>22 to 28 October 2026</h2>
+      <p class="callout"><b>Check first:</b> your SPOC uploads the idea, and colleges usually set an internal cut-off before 28 Oct. Ask today.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Day</th><th>Work</th><th>Done when</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">Thu 22–Fri 23</td><td>Lock the PS and roles. Interview the AICTE coordinator. Download APH 2024-27. Collect 30 public EoA PDFs. Set up the GitHub repo.</td><td>Interview notes + repo</td></tr>
+          <tr><td class="mono">Sat 24</td><td>Synthetic document generator (Fire NOC, lease, affidavit, FDR, completion certificate) + forgery injector</td><td>100 documents with labels</td></tr>
+          <tr><td class="mono">Sun 25</td><td>Pipeline: upload → OCR → extraction → 10 APH rules → 3 forensic checks → evidence card UI</td><td>A forged NOC shows red with evidence</td></tr>
+          <tr><td class="mono">Mon 26</td><td>Mock issuer service + QR allow-list + PDF signature check. Dashboard. Satellite check for your own campus.</td><td>The full demo flow runs end to end</td></tr>
+          <tr><td class="mono">Tue 27</td><td>Deploy on a free tier. Record the 2-minute video. Build the 6 slides with real screenshots. Mock judging using section 13.</td><td>PDF deck + video + live link</td></tr>
+          <tr><td class="mono">Wed 28</td><td>Proofread, check IDs, export PDF, submit through the SPOC</td><td>Submitted</td></tr>
+        </tbody>
+      </table></div>
+      <div class="card">
+        <h3 style="font-size:1rem">Suggested roles for 6 members</h3>
+        <ul class="tight" style="margin-top:8px;font-size:.92rem">
+          <li><b>Lead + pitch:</b> story, PPT, stakeholder interview, judge Q&amp;A owner</li>
+          <li><b>Backend:</b> FastAPI, queue, database, audit chain, issuer registry</li>
+          <li><b>Document AI:</b> OCR, extraction, rulebook</li>
+          <li><b>Forensics:</b> PDF and image forensics, duplicate detection, red-team set</li>
+          <li><b>Geo + vision:</b> satellite footprint, photo EXIF, equipment counting</li>
+          <li><b>Frontend + design:</b> dashboard, evidence cards, slide visuals, demo video</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section id="sources">
+      <div class="eyebrow">16 · Sources</div>
+      <h2>Where all of this came from</h2>
+      <ul class="tight" style="font-size:.9rem">
+        <li>SIH 2026 problem statements (read 22 Oct 2026): <a href="https://sih.gov.in/sih2026PS" target="_blank" rel="noopener">sih.gov.in/sih2026PS</a></li>
+        <li>SIH 2024 winner Kal Hona Code: <a href="https://www.kluniversity.in/view.aspx?id=3518" target="_blank" rel="noopener">K L University</a></li>
+        <li>SIH 2023 winner write-up: <a href="https://dev.to/heisdinesh/smart-india-hackathon-2023-winners-471" target="_blank" rel="noopener">dev.to/heisdinesh</a></li>
+        <li>Two-time winner guide: <a href="https://dev.to/ishikajain/a-beginners-guide-to-winning-smart-india-hackathon-1pei" target="_blank" rel="noopener">dev.to/ishikajain</a></li>
+        <li>SIH 2025 finalist PPT walkthrough: <a href="https://www.youtube.com/watch?v=0IQsRUJLhUc" target="_blank" rel="noopener">KunnuSherry on YouTube</a></li>
+        <li>SIH 2025 winners' strategy video: <a href="https://www.youtube.com/watch?v=D8aT-82-pr8" target="_blank" rel="noopener">Newton School of Technology</a></li>
+        <li>SIH 2025 software first prize (SIH25132): <a href="https://sairam.edu.in/first-prize-at-the-smart-india-hackathon-2025-software-edition-all-india-level/" target="_blank" rel="noopener">Sairam</a> · Khwaab Society: <a href="https://ksac.kiit.ac.in/news/khwaab-society-triumphs-as-national-winners-at-smart-india-hackathon-2025-with-%e2%82%b91-5-lakh-grand-prize/" target="_blank" rel="noopener">KIIT</a></li>
+        <li>SIH idea template (6 slides, PDF): <a href="https://docs.google.com/presentation/d/1UAcsy0OUn86ZzrcGbXTdcyoc6uqV4Jr2/htmlpresent" target="_blank" rel="noopener">Google Slides copy</a></li>
+        <li>APAAR consent case: <a href="https://www.livelaw.in/top-stories/will-ask-cbse-to-give-opt-out-option-in-apaar-consent-forms-for-students-supreme-court-in-plea-against-aadhaar-linkage-541982" target="_blank" rel="noopener">LiveLaw</a></li>
+        <li>DocTamper dataset: <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Qu_Towards_Robust_Tampered_Text_Detection_in_Document_Image_New_Dataset_CVPR_2023_paper.html" target="_blank" rel="noopener">CVPR 2023 paper</a></li>
+        <li>News cases: links are on each card in section 03.</li>
+      </ul>
+      <p class="muted" style="font-size:.88rem">Third-party winner accounts are anecdotal, and SIH doesn't publish an official finale rubric. Re-check numbers before putting them on a slide, and don't quote any target from section 09 as a result.</p>
+    </section>
+  </main>
+</div>
+
+<footer><div class="wrap">Prepared 22 October 2026 for the SIH 2026 idea submission on PS SIH26261 (AICTE). Idea deadline: 28 October 2026.</div></footer>

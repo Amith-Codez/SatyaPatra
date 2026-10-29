@@ -1,0 +1,1592 @@
+{
+ "fire_noc": {
+  "FS-2026-07023": {
+   "reference": "FS/2026/07023",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Example Institute of Engineering",
+   "address": "Plot 14, Knowledge Park Road, Sample Nagar",
+   "issue_date": "2026-08-05",
+   "valid_until": "2027-08-05",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-07092": {
+   "reference": "FS/2026/07092",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Demo Polytechnic",
+   "address": "Old Highway 6, Example District",
+   "issue_date": "2026-04-18",
+   "valid_until": "2027-04-18",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-07159": {
+   "reference": "FS/2026/07159",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Model Institute of Management",
+   "address": "Sector 9, Institutional Area, Model City",
+   "issue_date": "2026-07-28",
+   "valid_until": "2027-07-28",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-07312": {
+   "reference": "FS/2026/07312",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Test Engineering College",
+   "address": "Canal Road, Test Village",
+   "issue_date": "2025-08-23",
+   "valid_until": "2026-08-23",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-07411": {
+   "reference": "FS/2026/07411",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Placeholder Pharmacy College",
+   "address": "Hill View Layout, Placeholder Pur",
+   "issue_date": "2026-08-13",
+   "valid_until": "2027-08-13",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-07483": {
+   "reference": "FS/2026/07483",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Prototype Institute of Science",
+   "address": "NH-44 Service Road, Prototype Nagar",
+   "issue_date": "2026-06-17",
+   "valid_until": "2027-06-17",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-07571": {
+   "reference": "FS/2026/07571",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Specimen School of Architecture",
+   "address": "Riverfront Lane, Specimen City",
+   "issue_date": "2026-08-28",
+   "valid_until": "2027-08-28",
+   "permitted_use": "Ground & first floor - studios and classrooms; Basement - parking and storage only"
+  },
+  "FS-2026-07683": {
+   "reference": "FS/2026/07683",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Illustrative Institute of Technology",
+   "address": "Temple Street Extension, Illustrative Town",
+   "issue_date": "2025-07-16",
+   "valid_until": "2026-07-16",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91008": {
+   "reference": "FS/2026/91008",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 000 Victim",
+   "address": "Victim Lane 0",
+   "issue_date": "2026-04-14",
+   "valid_until": "2027-04-14",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91021": {
+   "reference": "FS/2026/91021",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "issue_date": "2026-06-02",
+   "valid_until": "2027-06-02",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91052": {
+   "reference": "FS/2026/91052",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "issue_date": "2026-05-16",
+   "valid_until": "2027-05-16",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91071": {
+   "reference": "FS/2026/91071",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "issue_date": "2026-07-12",
+   "valid_until": "2027-07-12",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91162": {
+   "reference": "FS/2026/91162",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "issue_date": "2025-06-24",
+   "valid_until": "2026-06-24",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91255": {
+   "reference": "FS/2026/91255",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "issue_date": "2025-09-06",
+   "valid_until": "2026-09-06",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91276": {
+   "reference": "FS/2026/91276",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "issue_date": "2025-08-08",
+   "valid_until": "2026-08-08",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91312": {
+   "reference": "FS/2026/91312",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 001 Victim",
+   "address": "Victim Lane 1",
+   "issue_date": "2026-06-14",
+   "valid_until": "2027-06-14",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91353": {
+   "reference": "FS/2026/91353",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "issue_date": "2026-04-21",
+   "valid_until": "2027-04-21",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91384": {
+   "reference": "FS/2026/91384",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "issue_date": "2026-06-17",
+   "valid_until": "2027-06-17",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91423": {
+   "reference": "FS/2026/91423",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "issue_date": "2026-07-23",
+   "valid_until": "2027-07-23",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91537": {
+   "reference": "FS/2026/91537",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "issue_date": "2025-07-18",
+   "valid_until": "2026-07-18",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91641": {
+   "reference": "FS/2026/91641",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "issue_date": "2025-06-14",
+   "valid_until": "2026-06-14",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91667": {
+   "reference": "FS/2026/91667",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "issue_date": "2025-07-29",
+   "valid_until": "2026-07-29",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91683": {
+   "reference": "FS/2026/91683",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 002 Victim",
+   "address": "Victim Lane 2",
+   "issue_date": "2026-06-03",
+   "valid_until": "2027-06-03",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91719": {
+   "reference": "FS/2026/91719",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "issue_date": "2026-06-26",
+   "valid_until": "2027-06-26",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91733": {
+   "reference": "FS/2026/91733",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "issue_date": "2026-08-30",
+   "valid_until": "2027-08-30",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91774": {
+   "reference": "FS/2026/91774",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "issue_date": "2026-04-06",
+   "valid_until": "2027-04-06",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91865": {
+   "reference": "FS/2026/91865",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "issue_date": "2025-07-01",
+   "valid_until": "2026-07-01",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91952": {
+   "reference": "FS/2026/91952",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "issue_date": "2025-07-01",
+   "valid_until": "2026-07-01",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-91985": {
+   "reference": "FS/2026/91985",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "issue_date": "2025-08-23",
+   "valid_until": "2026-08-23",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92020": {
+   "reference": "FS/2026/92020",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 003 Victim",
+   "address": "Victim Lane 3",
+   "issue_date": "2026-04-13",
+   "valid_until": "2027-04-13",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92044": {
+   "reference": "FS/2026/92044",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "issue_date": "2026-05-06",
+   "valid_until": "2027-05-06",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92079": {
+   "reference": "FS/2026/92079",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "issue_date": "2026-06-21",
+   "valid_until": "2027-06-21",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92111": {
+   "reference": "FS/2026/92111",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "issue_date": "2026-08-22",
+   "valid_until": "2027-08-22",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92186": {
+   "reference": "FS/2026/92186",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "issue_date": "2025-09-09",
+   "valid_until": "2026-09-09",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92272": {
+   "reference": "FS/2026/92272",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "issue_date": "2025-08-23",
+   "valid_until": "2026-08-23",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92327": {
+   "reference": "FS/2026/92327",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "issue_date": "2025-07-27",
+   "valid_until": "2026-07-27",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92363": {
+   "reference": "FS/2026/92363",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 004 Victim",
+   "address": "Victim Lane 4",
+   "issue_date": "2026-08-01",
+   "valid_until": "2027-08-01",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92375": {
+   "reference": "FS/2026/92375",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "issue_date": "2026-04-10",
+   "valid_until": "2027-04-10",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92407": {
+   "reference": "FS/2026/92407",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "issue_date": "2026-05-20",
+   "valid_until": "2027-05-20",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92441": {
+   "reference": "FS/2026/92441",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "issue_date": "2026-09-07",
+   "valid_until": "2027-09-07",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92558": {
+   "reference": "FS/2026/92558",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "issue_date": "2025-06-24",
+   "valid_until": "2026-06-24",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92654": {
+   "reference": "FS/2026/92654",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "issue_date": "2025-09-09",
+   "valid_until": "2026-09-09",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92695": {
+   "reference": "FS/2026/92695",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "issue_date": "2025-07-20",
+   "valid_until": "2026-07-20",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92736": {
+   "reference": "FS/2026/92736",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 005 Victim",
+   "address": "Victim Lane 5",
+   "issue_date": "2026-06-13",
+   "valid_until": "2027-06-13",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92776": {
+   "reference": "FS/2026/92776",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "issue_date": "2026-07-13",
+   "valid_until": "2027-07-13",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92812": {
+   "reference": "FS/2026/92812",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "issue_date": "2026-06-24",
+   "valid_until": "2027-06-24",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92845": {
+   "reference": "FS/2026/92845",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "issue_date": "2026-08-22",
+   "valid_until": "2027-08-22",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-92938": {
+   "reference": "FS/2026/92938",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "issue_date": "2025-08-04",
+   "valid_until": "2026-08-04",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93043": {
+   "reference": "FS/2026/93043",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "issue_date": "2025-05-02",
+   "valid_until": "2026-05-02",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93101": {
+   "reference": "FS/2026/93101",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "issue_date": "2025-08-10",
+   "valid_until": "2026-08-10",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93129": {
+   "reference": "FS/2026/93129",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 006 Victim",
+   "address": "Victim Lane 6",
+   "issue_date": "2026-05-01",
+   "valid_until": "2027-05-01",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93146": {
+   "reference": "FS/2026/93146",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "issue_date": "2026-06-29",
+   "valid_until": "2027-06-29",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93184": {
+   "reference": "FS/2026/93184",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "issue_date": "2026-07-12",
+   "valid_until": "2027-07-12",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93195": {
+   "reference": "FS/2026/93195",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "issue_date": "2026-06-19",
+   "valid_until": "2027-06-19",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93294": {
+   "reference": "FS/2026/93294",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "issue_date": "2025-09-09",
+   "valid_until": "2026-09-09",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93381": {
+   "reference": "FS/2026/93381",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "issue_date": "2025-05-25",
+   "valid_until": "2026-05-25",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93435": {
+   "reference": "FS/2026/93435",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "issue_date": "2025-09-27",
+   "valid_until": "2026-09-27",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93453": {
+   "reference": "FS/2026/93453",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 007 Victim",
+   "address": "Victim Lane 7",
+   "issue_date": "2026-05-28",
+   "valid_until": "2027-05-28",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93469": {
+   "reference": "FS/2026/93469",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "issue_date": "2026-04-23",
+   "valid_until": "2027-04-23",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93476": {
+   "reference": "FS/2026/93476",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "issue_date": "2026-04-27",
+   "valid_until": "2027-04-27",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93500": {
+   "reference": "FS/2026/93500",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "issue_date": "2026-05-12",
+   "valid_until": "2027-05-12",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93595": {
+   "reference": "FS/2026/93595",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "issue_date": "2025-09-07",
+   "valid_until": "2026-09-07",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93668": {
+   "reference": "FS/2026/93668",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "issue_date": "2025-05-20",
+   "valid_until": "2026-05-20",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93737": {
+   "reference": "FS/2026/93737",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "issue_date": "2025-09-28",
+   "valid_until": "2026-09-28",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93750": {
+   "reference": "FS/2026/93750",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 008 Victim",
+   "address": "Victim Lane 8",
+   "issue_date": "2026-05-21",
+   "valid_until": "2027-05-21",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93760": {
+   "reference": "FS/2026/93760",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "issue_date": "2026-05-03",
+   "valid_until": "2027-05-03",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93780": {
+   "reference": "FS/2026/93780",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "issue_date": "2026-04-06",
+   "valid_until": "2027-04-06",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93819": {
+   "reference": "FS/2026/93819",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "issue_date": "2026-09-06",
+   "valid_until": "2027-09-06",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93886": {
+   "reference": "FS/2026/93886",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "issue_date": "2025-08-09",
+   "valid_until": "2026-08-09",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-93977": {
+   "reference": "FS/2026/93977",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "issue_date": "2025-05-02",
+   "valid_until": "2026-05-02",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94014": {
+   "reference": "FS/2026/94014",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "issue_date": "2025-09-21",
+   "valid_until": "2026-09-21",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94047": {
+   "reference": "FS/2026/94047",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 009 Victim",
+   "address": "Victim Lane 9",
+   "issue_date": "2026-08-20",
+   "valid_until": "2027-08-20",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94087": {
+   "reference": "FS/2026/94087",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "issue_date": "2026-04-05",
+   "valid_until": "2027-04-05",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94094": {
+   "reference": "FS/2026/94094",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "issue_date": "2026-06-15",
+   "valid_until": "2027-06-15",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94118": {
+   "reference": "FS/2026/94118",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "issue_date": "2026-06-08",
+   "valid_until": "2027-06-08",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94243": {
+   "reference": "FS/2026/94243",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "issue_date": "2025-08-27",
+   "valid_until": "2026-08-27",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94319": {
+   "reference": "FS/2026/94319",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "issue_date": "2025-04-07",
+   "valid_until": "2026-04-07",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94347": {
+   "reference": "FS/2026/94347",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "issue_date": "2025-07-16",
+   "valid_until": "2026-07-16",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94365": {
+   "reference": "FS/2026/94365",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 010 Victim",
+   "address": "Victim Lane 10",
+   "issue_date": "2026-07-19",
+   "valid_until": "2027-07-19",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94400": {
+   "reference": "FS/2026/94400",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "issue_date": "2026-06-25",
+   "valid_until": "2027-06-25",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94429": {
+   "reference": "FS/2026/94429",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "issue_date": "2026-04-13",
+   "valid_until": "2027-04-13",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94461": {
+   "reference": "FS/2026/94461",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "issue_date": "2026-07-14",
+   "valid_until": "2027-07-14",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94582": {
+   "reference": "FS/2026/94582",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "issue_date": "2025-07-31",
+   "valid_until": "2026-07-31",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94658": {
+   "reference": "FS/2026/94658",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "issue_date": "2025-09-07",
+   "valid_until": "2026-09-07",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94684": {
+   "reference": "FS/2026/94684",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "issue_date": "2025-08-09",
+   "valid_until": "2026-08-09",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94725": {
+   "reference": "FS/2026/94725",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 011 Victim",
+   "address": "Victim Lane 11",
+   "issue_date": "2026-07-17",
+   "valid_until": "2027-07-17",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94736": {
+   "reference": "FS/2026/94736",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "issue_date": "2026-07-28",
+   "valid_until": "2027-07-28",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94750": {
+   "reference": "FS/2026/94750",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "issue_date": "2026-06-13",
+   "valid_until": "2027-06-13",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94783": {
+   "reference": "FS/2026/94783",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "issue_date": "2026-05-22",
+   "valid_until": "2027-05-22",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94869": {
+   "reference": "FS/2026/94869",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "issue_date": "2025-07-24",
+   "valid_until": "2026-07-24",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-94965": {
+   "reference": "FS/2026/94965",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "issue_date": "2025-03-27",
+   "valid_until": "2026-03-27",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95028": {
+   "reference": "FS/2026/95028",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "issue_date": "2025-07-02",
+   "valid_until": "2026-07-02",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95032": {
+   "reference": "FS/2026/95032",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 012 Victim",
+   "address": "Victim Lane 12",
+   "issue_date": "2026-06-21",
+   "valid_until": "2027-06-21",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95038": {
+   "reference": "FS/2026/95038",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "issue_date": "2026-05-23",
+   "valid_until": "2027-05-23",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95048": {
+   "reference": "FS/2026/95048",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "issue_date": "2026-05-19",
+   "valid_until": "2027-05-19",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95078": {
+   "reference": "FS/2026/95078",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "issue_date": "2026-08-07",
+   "valid_until": "2027-08-07",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95148": {
+   "reference": "FS/2026/95148",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "issue_date": "2025-07-16",
+   "valid_until": "2026-07-16",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95213": {
+   "reference": "FS/2026/95213",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "issue_date": "2025-03-12",
+   "valid_until": "2026-03-12",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95250": {
+   "reference": "FS/2026/95250",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "issue_date": "2025-07-31",
+   "valid_until": "2026-07-31",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95264": {
+   "reference": "FS/2026/95264",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 013 Victim",
+   "address": "Victim Lane 13",
+   "issue_date": "2026-05-26",
+   "valid_until": "2027-05-26",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95287": {
+   "reference": "FS/2026/95287",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "issue_date": "2026-08-04",
+   "valid_until": "2027-08-04",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95297": {
+   "reference": "FS/2026/95297",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "issue_date": "2026-07-17",
+   "valid_until": "2027-07-17",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95305": {
+   "reference": "FS/2026/95305",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "issue_date": "2026-05-16",
+   "valid_until": "2027-05-16",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95407": {
+   "reference": "FS/2026/95407",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "issue_date": "2025-07-15",
+   "valid_until": "2026-07-15",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95493": {
+   "reference": "FS/2026/95493",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "issue_date": "2025-06-03",
+   "valid_until": "2026-06-03",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95537": {
+   "reference": "FS/2026/95537",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "issue_date": "2025-09-04",
+   "valid_until": "2026-09-04",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95573": {
+   "reference": "FS/2026/95573",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 014 Victim",
+   "address": "Victim Lane 14",
+   "issue_date": "2026-04-10",
+   "valid_until": "2027-04-10",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95582": {
+   "reference": "FS/2026/95582",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "issue_date": "2026-06-13",
+   "valid_until": "2027-06-13",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95589": {
+   "reference": "FS/2026/95589",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "issue_date": "2026-04-11",
+   "valid_until": "2027-04-11",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95619": {
+   "reference": "FS/2026/95619",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "issue_date": "2026-08-04",
+   "valid_until": "2027-08-04",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95692": {
+   "reference": "FS/2026/95692",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "issue_date": "2025-08-27",
+   "valid_until": "2026-08-27",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95753": {
+   "reference": "FS/2026/95753",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "issue_date": "2025-04-29",
+   "valid_until": "2026-04-29",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  },
+  "FS-2026-95783": {
+   "reference": "FS/2026/95783",
+   "issuer": "Sample State Fire & Emergency Services",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "issue_date": "2025-09-14",
+   "valid_until": "2026-09-14",
+   "permitted_use": "Ground & first floor - classrooms and labs; Basement - parking and storage only"
+  }
+ },
+ "building_completion": {
+  "BCC-2025-07029": {
+   "reference": "BCC/2025/07029",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Example Institute of Engineering",
+   "address": "Plot 14, Knowledge Park Road, Sample Nagar",
+   "builtup_m2": 21500,
+   "issue_date": "2025-10-13"
+  },
+  "BCC-2025-07070": {
+   "reference": "BCC/2025/07070",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Sample College of Technology",
+   "address": "Survey No. 88, Lakeview Ring Road, Demo Town",
+   "builtup_m2": 18200,
+   "issue_date": "2025-09-25"
+  },
+  "BCC-2025-07098": {
+   "reference": "BCC/2025/07098",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Demo Polytechnic",
+   "address": "Old Highway 6, Example District",
+   "builtup_m2": 12400,
+   "issue_date": "2025-05-14"
+  },
+  "BCC-2025-07198": {
+   "reference": "BCC/2025/07198",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Model Institute of Management",
+   "address": "Sector 9, Institutional Area, Model City",
+   "builtup_m2": 9800,
+   "issue_date": "2025-06-17"
+  },
+  "BCC-2025-07358": {
+   "reference": "BCC/2025/07358",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Test Engineering College",
+   "address": "Canal Road, Test Village",
+   "builtup_m2": 16800,
+   "issue_date": "2025-04-21"
+  },
+  "BCC-2025-07424": {
+   "reference": "BCC/2025/07424",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Placeholder Pharmacy College",
+   "address": "Hill View Layout, Placeholder Pur",
+   "builtup_m2": 8600,
+   "issue_date": "2025-01-10"
+  },
+  "BCC-2025-07524": {
+   "reference": "BCC/2025/07524",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Prototype Institute of Science",
+   "address": "NH-44 Service Road, Prototype Nagar",
+   "builtup_m2": 14900,
+   "issue_date": "2024-08-05"
+  },
+  "BCC-2025-07593": {
+   "reference": "BCC/2025/07593",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Specimen School of Architecture",
+   "address": "Riverfront Lane, Specimen City",
+   "builtup_m2": 7400,
+   "issue_date": "2024-05-14"
+  },
+  "BCC-2025-07689": {
+   "reference": "BCC/2025/07689",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Illustrative Institute of Technology",
+   "address": "Temple Street Extension, Illustrative Town",
+   "builtup_m2": 19400,
+   "issue_date": "2025-05-17"
+  },
+  "BCC-2025-07756": {
+   "reference": "BCC/2025/07756",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Reference College of Engineering",
+   "address": "Airport Road, Reference Nagar",
+   "builtup_m2": 15200,
+   "issue_date": "2025-08-08"
+  },
+  "BCC-2025-91105": {
+   "reference": "BCC/2025/91105",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "builtup_m2": 10000,
+   "issue_date": "2025-05-18"
+  },
+  "BCC-2025-91239": {
+   "reference": "BCC/2025/91239",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "builtup_m2": 10000,
+   "issue_date": "2024-05-30"
+  },
+  "BCC-2025-91448": {
+   "reference": "BCC/2025/91448",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "builtup_m2": 10300,
+   "issue_date": "2025-10-27"
+  },
+  "BCC-2025-91606": {
+   "reference": "BCC/2025/91606",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "builtup_m2": 10300,
+   "issue_date": "2024-10-26"
+  },
+  "BCC-2025-91783": {
+   "reference": "BCC/2025/91783",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "builtup_m2": 10600,
+   "issue_date": "2024-09-18"
+  },
+  "BCC-2025-91942": {
+   "reference": "BCC/2025/91942",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "builtup_m2": 10600,
+   "issue_date": "2025-01-30"
+  },
+  "BCC-2025-92134": {
+   "reference": "BCC/2025/92134",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "builtup_m2": 10900,
+   "issue_date": "2025-08-04"
+  },
+  "BCC-2025-92237": {
+   "reference": "BCC/2025/92237",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "builtup_m2": 10900,
+   "issue_date": "2025-01-26"
+  },
+  "BCC-2025-92482": {
+   "reference": "BCC/2025/92482",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "builtup_m2": 11200,
+   "issue_date": "2024-12-15"
+  },
+  "BCC-2025-92617": {
+   "reference": "BCC/2025/92617",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "builtup_m2": 11200,
+   "issue_date": "2025-04-18"
+  },
+  "BCC-2025-92871": {
+   "reference": "BCC/2025/92871",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "builtup_m2": 11500,
+   "issue_date": "2025-03-19"
+  },
+  "BCC-2025-93005": {
+   "reference": "BCC/2025/93005",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "builtup_m2": 11500,
+   "issue_date": "2024-09-09"
+  },
+  "BCC-2025-93214": {
+   "reference": "BCC/2025/93214",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "builtup_m2": 11800,
+   "issue_date": "2025-03-27"
+  },
+  "BCC-2025-93354": {
+   "reference": "BCC/2025/93354",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "builtup_m2": 11800,
+   "issue_date": "2025-05-30"
+  },
+  "BCC-2025-93510": {
+   "reference": "BCC/2025/93510",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "builtup_m2": 12100,
+   "issue_date": "2024-07-07"
+  },
+  "BCC-2025-93636": {
+   "reference": "BCC/2025/93636",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "builtup_m2": 12100,
+   "issue_date": "2025-03-18"
+  },
+  "BCC-2025-93823": {
+   "reference": "BCC/2025/93823",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "builtup_m2": 12400,
+   "issue_date": "2024-05-17"
+  },
+  "BCC-2025-93954": {
+   "reference": "BCC/2025/93954",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "builtup_m2": 12400,
+   "issue_date": "2025-03-17"
+  },
+  "BCC-2025-94155": {
+   "reference": "BCC/2025/94155",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "builtup_m2": 12700,
+   "issue_date": "2024-10-20"
+  },
+  "BCC-2025-94298": {
+   "reference": "BCC/2025/94298",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "builtup_m2": 12700,
+   "issue_date": "2024-12-14"
+  },
+  "BCC-2025-94500": {
+   "reference": "BCC/2025/94500",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "builtup_m2": 13000,
+   "issue_date": "2024-11-04"
+  },
+  "BCC-2025-94619": {
+   "reference": "BCC/2025/94619",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "builtup_m2": 13000,
+   "issue_date": "2025-09-02"
+  },
+  "BCC-2025-94814": {
+   "reference": "BCC/2025/94814",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "builtup_m2": 13300,
+   "issue_date": "2025-02-10"
+  },
+  "BCC-2025-94945": {
+   "reference": "BCC/2025/94945",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "builtup_m2": 13300,
+   "issue_date": "2024-11-24"
+  },
+  "BCC-2025-95118": {
+   "reference": "BCC/2025/95118",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "builtup_m2": 13600,
+   "issue_date": "2025-06-09"
+  },
+  "BCC-2025-95197": {
+   "reference": "BCC/2025/95197",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "builtup_m2": 13600,
+   "issue_date": "2024-05-11"
+  },
+  "BCC-2025-95337": {
+   "reference": "BCC/2025/95337",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "builtup_m2": 13900,
+   "issue_date": "2025-06-02"
+  },
+  "BCC-2025-95463": {
+   "reference": "BCC/2025/95463",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "builtup_m2": 13900,
+   "issue_date": "2025-10-22"
+  },
+  "BCC-2025-95633": {
+   "reference": "BCC/2025/95633",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "builtup_m2": 14200,
+   "issue_date": "2025-01-21"
+  },
+  "BCC-2025-95733": {
+   "reference": "BCC/2025/95733",
+   "issuer": "Sample Municipal Corporation",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "builtup_m2": 14200,
+   "issue_date": "2025-07-22"
+  }
+ },
+ "lease_deed": {
+  "REG-2024-007038": {
+   "reference": "REG/2024/007038",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Example Institute of Engineering",
+   "address": "Plot 14, Knowledge Park Road, Sample Nagar",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-007076": {
+   "reference": "REG/2024/007076",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Sample College of Technology",
+   "address": "Survey No. 88, Lakeview Ring Road, Demo Town",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-007109": {
+   "reference": "REG/2024/007109",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Demo Polytechnic",
+   "address": "Old Highway 6, Example District",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-007236": {
+   "reference": "REG/2024/007236",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Model Institute of Management",
+   "address": "Sector 9, Institutional Area, Model City",
+   "lease_end": "2038-10-22"
+  },
+  "REG-2024-007380": {
+   "reference": "REG/2024/007380",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Test Engineering College",
+   "address": "Canal Road, Test Village",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-007453": {
+   "reference": "REG/2024/007453",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Placeholder Pharmacy College",
+   "address": "Hill View Layout, Placeholder Pur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-007556": {
+   "reference": "REG/2024/007556",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Prototype Institute of Science",
+   "address": "NH-44 Service Road, Prototype Nagar",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-007624": {
+   "reference": "REG/2024/007624",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Specimen School of Architecture",
+   "address": "Riverfront Lane, Specimen City",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-007700": {
+   "reference": "REG/2024/007700",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Illustrative Institute of Technology",
+   "address": "Temple Street Extension, Illustrative Town",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-007794": {
+   "reference": "REG/2024/007794",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Reference College of Engineering",
+   "address": "Airport Road, Reference Nagar",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-091132": {
+   "reference": "REG/2024/091132",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 000",
+   "address": "Test Plot 1, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-091462": {
+   "reference": "REG/2024/091462",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 001",
+   "address": "Test Plot 2, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-091815": {
+   "reference": "REG/2024/091815",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 002",
+   "address": "Test Plot 3, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-092139": {
+   "reference": "REG/2024/092139",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 003",
+   "address": "Test Plot 4, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-092505": {
+   "reference": "REG/2024/092505",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 004",
+   "address": "Test Plot 5, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-092906": {
+   "reference": "REG/2024/092906",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 005",
+   "address": "Test Plot 6, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-093252": {
+   "reference": "REG/2024/093252",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 006",
+   "address": "Test Plot 7, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-093538": {
+   "reference": "REG/2024/093538",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 007",
+   "address": "Test Plot 8, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-093850": {
+   "reference": "REG/2024/093850",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 008",
+   "address": "Test Plot 9, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-094183": {
+   "reference": "REG/2024/094183",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 009",
+   "address": "Test Plot 10, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-094524": {
+   "reference": "REG/2024/094524",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 010",
+   "address": "Test Plot 11, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-094824": {
+   "reference": "REG/2024/094824",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 011",
+   "address": "Test Plot 12, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-095127": {
+   "reference": "REG/2024/095127",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 012",
+   "address": "Test Plot 13, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-095348": {
+   "reference": "REG/2024/095348",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 013",
+   "address": "Test Plot 14, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  },
+  "REG-2024-095663": {
+   "reference": "REG/2024/095663",
+   "issuer": "Sample Sub-Registrar Office",
+   "institution": "Evaluation Institute 014",
+   "address": "Test Plot 15, Evaluation Road, Testpur",
+   "lease_end": "2057-10-22"
+  }
+ },
+ "fdr": {
+  "FDR00007044": {
+   "reference": "FDR00007044",
+   "issuer": "Sample National Bank",
+   "institution": "Example Institute of Engineering",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007086": {
+   "reference": "FDR00007086",
+   "issuer": "Sample National Bank",
+   "institution": "Sample College of Technology",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007121": {
+   "reference": "FDR00007121",
+   "issuer": "Sample National Bank",
+   "institution": "Demo Polytechnic",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007275": {
+   "reference": "FDR00007275",
+   "issuer": "Sample National Bank",
+   "institution": "Model Institute of Management",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007404": {
+   "reference": "FDR00007404",
+   "issuer": "Sample National Bank",
+   "institution": "Test Engineering College",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007460": {
+   "reference": "FDR00007460",
+   "issuer": "Sample National Bank",
+   "institution": "Placeholder Pharmacy College",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007564": {
+   "reference": "FDR00007564",
+   "issuer": "Sample National Bank",
+   "institution": "Prototype Institute of Science",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007651": {
+   "reference": "FDR00007651",
+   "issuer": "Sample National Bank",
+   "institution": "Specimen School of Architecture",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007728": {
+   "reference": "FDR00007728",
+   "issuer": "Sample National Bank",
+   "institution": "Illustrative Institute of Technology",
+   "amount_inr": 1000000,
+   "exists": true
+  },
+  "FDR00007823": {
+   "reference": "FDR00007823",
+   "issuer": "Sample National Bank",
+   "institution": "Reference College of Engineering",
+   "amount_inr": 1000000,
+   "exists": false
+  }
+ }
+}

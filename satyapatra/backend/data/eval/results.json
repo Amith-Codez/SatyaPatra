@@ -1,0 +1,177 @@
+{
+ "documents": 195,
+ "forged": 120,
+ "genuine": 75,
+ "catch_rate": 1.0,
+ "false_alarm_rate": 0.0,
+ "median_ms_pdf": 142,
+ "median_ms_scan": 981.0,
+ "groups": [
+  {
+   "group": "genuine",
+   "label": "Fire NOC, genuine PDF",
+   "n": 15,
+   "ok": 15,
+   "metric": "verified",
+   "rate": 1.0,
+   "hard": 0,
+   "signals": {},
+   "median_ms": 142
+  },
+  {
+   "group": "genuine_signed",
+   "label": "Fire NOC, genuine, digitally signed",
+   "n": 15,
+   "ok": 15,
+   "metric": "verified",
+   "rate": 1.0,
+   "hard": 0,
+   "signals": {},
+   "median_ms": 136
+  },
+  {
+   "group": "genuine_scan",
+   "label": "Fire NOC, genuine, scanned (JPEG)",
+   "n": 15,
+   "ok": 15,
+   "metric": "verified",
+   "rate": 1.0,
+   "hard": 0,
+   "signals": {},
+   "median_ms": 974
+  },
+  {
+   "group": "genuine_completion",
+   "label": "Completion certificate, genuine, signed",
+   "n": 15,
+   "ok": 15,
+   "metric": "verified",
+   "rate": 1.0,
+   "hard": 0,
+   "signals": {},
+   "median_ms": 136
+  },
+  {
+   "group": "genuine_lease",
+   "label": "Lease deed, genuine",
+   "n": 15,
+   "ok": 15,
+   "metric": "verified",
+   "rate": 1.0,
+   "hard": 0,
+   "signals": {},
+   "median_ms": 141
+  },
+  {
+   "group": "F1_fake_number",
+   "label": "Fake NOC number, official-looking",
+   "n": 15,
+   "ok": 15,
+   "metric": "caught",
+   "rate": 1.0,
+   "hard": 15,
+   "signals": {
+    "t2_not_found": 15
+   },
+   "median_ms": 141
+  },
+  {
+   "group": "F2_date_overlay",
+   "label": "Validity date pasted over",
+   "n": 15,
+   "ok": 15,
+   "metric": "caught",
+   "rate": 1.0,
+   "hard": 15,
+   "signals": {
+    "incremental_saves": 15,
+    "pdf_overlay_edit": 15,
+    "R-VAL-01": 15
+   },
+   "median_ms": 144
+  },
+  {
+   "group": "F3_seal_reuse",
+   "label": "Another college's NOC re-badged (seal scan reused)",
+   "n": 15,
+   "ok": 15,
+   "metric": "caught",
+   "rate": 1.0,
+   "hard": 15,
+   "signals": {
+    "t2_fields_differ": 15,
+    "scan_reused": 15
+   },
+   "median_ms": 143
+  },
+  {
+   "group": "F4_qr_untrusted",
+   "label": "QR code to a fake verification site",
+   "n": 15,
+   "ok": 15,
+   "metric": "caught",
+   "rate": 1.0,
+   "hard": 15,
+   "signals": {
+    "qr_untrusted": 15,
+    "t2_not_found": 15
+   },
+   "median_ms": 145
+  },
+  {
+   "group": "F5_post_sign_edit",
+   "label": "Edited after the issuer signed it",
+   "n": 15,
+   "ok": 15,
+   "metric": "caught",
+   "rate": 1.0,
+   "hard": 15,
+   "signals": {
+    "incremental_saves": 15,
+    "sig_modified": 15,
+    "pdf_overlay_edit": 15
+   },
+   "median_ms": 151
+  },
+  {
+   "group": "F6_expired",
+   "label": "Genuine but expired",
+   "n": 15,
+   "ok": 15,
+   "metric": "marked expired",
+   "rate": 1.0,
+   "hard": 15,
+   "signals": {
+    "R-VAL-01": 15
+   },
+   "median_ms": 139
+  },
+  {
+   "group": "F7_fake_seal",
+   "label": "Counterfeit seal + fake number",
+   "n": 15,
+   "ok": 15,
+   "metric": "caught",
+   "rate": 1.0,
+   "hard": 15,
+   "signals": {
+    "specimen_mismatch": 15,
+    "t2_not_found": 15
+   },
+   "median_ms": 140
+  },
+  {
+   "group": "F9_scan_paste",
+   "label": "Scanned NOC with a pasted date patch",
+   "n": 15,
+   "ok": 15,
+   "metric": "caught",
+   "rate": 1.0,
+   "hard": 15,
+   "signals": {
+    "t2_fields_differ": 15
+   },
+   "median_ms": 986
+  }
+ ]
+}

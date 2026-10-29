@@ -1,0 +1,65 @@
+# SatyaPatra rulebook (sample). Each rule names the handbook area it checks.
+# Officers edit this file (or the Rules screen) when the handbook changes; no code change needed.
+version: "APH 2024-27 / cycle 2027-28"
+required_documents:
+  EoA: [fire_noc, building_completion, lease_deed, fdr, affidavit, faculty_list]
+rules:
+  - id: R-DOC-01
+    title: Every required document is uploaded
+    ref: APH 2024-27, essential requirements (Ch. VI)
+    kind: required_documents
+    severity: hard
+  - id: R-VAL-01
+    title: Fire NOC is valid on the date of checking
+    ref: APH 2024-27, essential requirements (Ch. VI) - safety
+    kind: not_expired
+    doc_type: fire_noc
+    field: valid_until
+    severity: hard
+  - id: R-VAL-02
+    title: Lease deed runs for at least 30 years from today
+    ref: APH 2024-27, land requirement
+    kind: min_years_remaining
+    doc_type: lease_deed
+    field: lease_end
+    years: 30
+    severity: hard
+  - id: R-VAL-03
+    title: FDR has not matured or lapsed
+    ref: APH 2024-27, security deposit
+    kind: not_expired
+    doc_type: fdr
+    field: maturity_date
+    severity: hard
+  - id: R-AMT-01
+    title: FDR amount meets the required deposit
+    ref: APH 2024-27, security deposit
+    kind: min_amount
+    doc_type: fdr
+    field: amount_inr
+    min: 1000000
+    severity: hard
+  - id: R-AREA-01
+    title: Built-up area on the completion certificate matches the application
+    ref: APH 2024-27, built-up area norms
+    kind: match_application
+    doc_type: building_completion
+    field: builtup_m2
+    app_field: claimed_builtup_m2
+    tolerance: 0.05
+    severity: soft
+  - id: R-ADDR-01
+    title: Premises address is the same on every document
+    ref: APH 2024-27, institution identity
+    kind: address_consistency
+    severity: hard
+  - id: R-USE-01
+    title: Floors used for teaching are permitted for that use in the fire NOC
+    ref: APH 2024-27, safety (permitted use)
+    kind: permitted_use
+    severity: hard
+  - id: R-FAC-01
+    title: No full-time faculty member is declared by another institution
+    ref: APH 2024-27, faculty norms
+    kind: faculty_unique
+    severity: hard

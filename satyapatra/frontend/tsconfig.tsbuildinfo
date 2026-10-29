@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/ui.tsx","./src/pages/accuracy.tsx","./src/pages/application.tsx","./src/pages/issuers.tsx","./src/pages/ledger.tsx","./src/pages/memory.tsx","./src/pages/overview.tsx","./src/pages/queue.tsx","./src/pages/rules.tsx","./src/pages/verify.tsx"],"version":"5.6.2"}

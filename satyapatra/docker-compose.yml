@@ -1,0 +1,44 @@
+# Production-style deployment (pilot on NIC / MeghRaj cloud or any Linux VM).
+#   docker compose up --build
+# Console: http://localhost:8000   API docs: /docs   Metrics: /metrics
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment: { POSTGRES_DB: satyapatra, POSTGRES_USER: satya, POSTGRES_PASSWORD: change-me }
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U satya"], interval: 5s, retries: 10 }
+  redis:
+    image: redis:7-alpine
+  minio:
+    image: minio/minio:RELEASE.2024-09-22T00-33-43Z
+    command: server /data --console-address ":9001"
+    environment: { MINIO_ROOT_USER: satya, MINIO_ROOT_PASSWORD: change-me-please }
+    volumes: [evidence:/data]
+  ollama:
+    image: ollama/ollama:0.3.12
+    volumes: [models:/root/.ollama]
+  issuer-sandbox:
+    build: { context: ., dockerfile: Dockerfile }
+    command: uvicorn issuer_sandbox.app:app --host 0.0.0.0 --port 8100
+    environment: { SATYA_MAIN: http://api:8000 }
+    ports: ["8100:8100"]
+  api: &app
+    build: { context: ., dockerfile: Dockerfile }
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2
+    environment: &env
+      DATABASE_URL: postgresql+psycopg://satya:change-me@db:5432/satyapatra
+      REDIS_URL: redis://redis:6379/0
+      S3_ENDPOINT: http://minio:9000
+      S3_KEY: satya
+      S3_SECRET: change-me-please
+      SATYA_ISSUER_BASE: http://issuer-sandbox:8100
+      SATYA_OLLAMA: http://ollama:11434
+      SATYA_AUTH: "1"
+      SATYA_JWT_SECRET: replace-with-a-long-random-secret-from-a-vault
+    depends_on: { db: { condition: service_healthy }, redis: { condition: service_started } }
+    ports: ["8000:8000"]
+  worker:
+    <<: *app
+    command: rq worker satyapatra --url redis://redis:6379/0
+    ports: []
+volumes: { pgdata: {}, evidence: {}, models: {} }
