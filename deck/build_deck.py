@@ -138,26 +138,23 @@ box(s3, 0.4, 6.25, 4.75, 0.5, fill=OK, line=None, radius=0.2)
 text(s3, 0.45, 6.27, 4.65, 0.46, [{"runs": [("100% open source  ·  ₹0 licence  ·  CPU only, no GPU", {"bold": True, "color": WHITE, "size": 11.5})],
                                   "align": PP_ALIGN.CENTER}], anchor=MSO_ANCHOR.MIDDLE)
 pointer(s3, 5.35, 1.22, 7.58, "Methodology and process for implementation (Flow Charts/Images/ working prototype)", size=11.5)
-s3.shapes.add_picture("img/architecture2.png", Inches(5.35), Inches(1.55), width=Inches(7.58))
-_a = _I.open("img/shot_verify.png"); _b = _I.open("img/shot_geo.png")
-_ra, _rb = _a.width / _a.height, _b.width / _b.height
-_h = min(1.52, (7.58 - 0.12) / (_ra + _rb))
-s3.shapes.add_picture("img/shot_verify.png", Inches(5.35), Inches(3.98), height=Inches(_h))
-s3.shapes.add_picture("img/shot_geo.png", Inches(5.35 + _ra * _h + 0.12), Inches(3.98), height=Inches(_h))
-text(s3, 5.35, 5.53, 7.58, 0.26, [{"runs": [("Working prototype: a forged NOC checked in 0.26 s, issuer lookup included (left); claimed built-up area vs building footprints (right)",
-                                              {"italic": True, "color": MUTED, "size": 8.5})]}])
+
+s3.shapes.add_picture("img/architecture.png", Inches(5.35), Inches(1.55), width=Inches(7.58))  # built in draw.io: img-src/architecture.drawio
 steps = [("1  Built", "5 engines, issuer sandbox, console, 6 passing tests"),
          ("2  Measured", "195 labelled documents, 8 forgery types"),
          ("3  Pilot", "Our college's EoA, then one regional office")]
 sw = (7.58 - 2 * 0.1) / 3
 for i, (h, d) in enumerate(steps):
     xx = 5.35 + i * (sw + 0.1)
-    box(s3, xx, 5.88, sw, 0.87, fill="EEF0FC", line="DDE1FA")
-    text(s3, xx + 0.08, 5.92, sw - 0.16, 0.8, [{"runs": [(h, {"bold": True, "color": NAVY, "size": 11})]},
-                                               {"runs": [(d, {"size": 9.5})]}])
+    box(s3, xx, 6.25, sw, 0.5, fill="EEF0FC", line="DDE1FA")
+    text(s3, xx + 0.08, 6.27, sw - 0.16, 0.46, [{"runs": [(h + "  ", {"bold": True, "color": NAVY, "size": 9.5}), (d, {"size": 8.5})]}],
+         anchor=MSO_ANCHOR.MIDDLE)
 notes(s3, "Left: every choice has a reason and a rejected alternative; ask us about any of them. "
-          "Right: the portal sends documents to our API, a queue feeds five engines, results land in Postgres and the ledger. "
-          "The two screenshots are the running prototype.")
+          "Right, follow the arrows: the institution and the officer sign in with their own roles. Every upload goes through the API "
+          "queue into five engines: Read, Check against the APH rulebook, Confirm with the issuing authority, Detect tampering using "
+          "cross-college memory, See the campus on satellite data, then Decide one of the six PS statuses. Results land in the database. "
+          "The officer's queue reads them riskiest first; the officer decides; every decision is written to the hash-chained ledger; "
+          "a clarification goes back to the institution, which re-submits. The diagram is an editable draw.io file in our repo.")
 
 # ================================================================ 4. FEASIBILITY AND VIABILITY
 remove_shape(shape_by_name(s4, "TextBox 8"))

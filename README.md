@@ -9,7 +9,8 @@ Every AICTE approval document confirmed with the authority that issued it, with 
 | `deck/SatyaPatra_SIH26261_Idea.pdf` | **The file to upload**: the 6-slide idea deck on the official SIH 2026 template |
 | `deck/SatyaPatra_SIH26261_Idea.pptx` | The same deck, editable (fill in [Team Name], [Team ID] and the three links on slide 2) |
 | `deck/build_deck.py` | Builds the .pptx from `SIH2026-official-template.pptx`, the images in `img/` and `../satyapatra/backend/data/eval/results.json` |
-| `deck/img-src/` → `deck/img/` | Diagram sources (HTML) and their renders; `render.sh` re-renders one |
+| `deck/img-src/architecture.drawio` | The slide 3 flowchart as an editable draw.io file: open it at [app.diagrams.net](https://app.diagrams.net) (File → Open from → Device). `architecture_drawio.py` regenerates it, `architecture.url` opens it straight in the editor |
+| `deck/img-src/` → `deck/img/` | Other diagram sources (HTML) and their renders; `render.sh` re-renders one |
 | `deck/cdp_clip.py`, `deck/cdp_shot.py` | Capture screenshots from the running console for the slides |
 | `deck/kn2pdf.sh` | Exports the .pptx to PDF with Keynote |
 | `satyapatra/` | The working prototype; see `satyapatra/README.md` to run it |
@@ -25,8 +26,8 @@ First, start the prototype (see `satyapatra/README.md`) so the console runs on h
 ```bash
 PY=../satyapatra/backend/.venv/bin/python
 $PY cdp_clip.py "http://localhost:8000/app/EOA-2027-005?doc=DOC-341E51FAF5" img/shot_evidence.png ".workbench" 4 12
-$PY cdp_clip.py "http://localhost:8000/verify?sample=04__Fire_NOC_with_fake_QR_site.pdf" img/shot_verify.png ".page > .section" 7 12
-$PY cdp_clip.py "http://localhost:8000/app/EOA-2027-003?tab=geo" img/shot_geo.png ".g-main" 6 12
+$PY img-src/architecture_drawio.py   # only if you changed the flowchart in code (or edit img-src/architecture.drawio in draw.io)
+$PY img-src/render_drawio.py         # draw.io renders the flowchart to img/architecture.png
 $PY build_deck.py
 ./kn2pdf.sh "$PWD/SatyaPatra_SIH26261_Idea.pptx" "$PWD/SatyaPatra_SIH26261_Idea.pdf"
 ```
